@@ -218,3 +218,6 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Project: keep the sample transcripts that sit next to each result table
+!results/**/*.log
