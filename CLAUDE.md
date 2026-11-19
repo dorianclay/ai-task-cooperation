@@ -4,7 +4,40 @@ Shared context for everyone (human or AI assistant) working in this repo. Course
 
 **Status: working draft.** The experimental design below comes from the initial proposal (2026-11-03) and is a *starting hypothesis about how to study the question*, not a settled plan. Expect the design, task choice, effort measure, and even the framing to change as smoke tests and early results come in. Treat each design element as the current best guess; the commitments that are firm are the research question, the rigor norms, and the collaboration norms. When evidence argues for a different path, change the path and record why.
 
-## Project (current working design; expected to evolve)
+## Current state (2026-11-18): read NOTES.md first
+
+The design has moved on from the proposal described in the next section. [NOTES.md](NOTES.md) is the source of truth for the current design, prompts and results; update it when a decision changes. Where this file and NOTES.md disagree about the design, NOTES.md is current. The experiment and collaboration norms further down still stand.
+
+**One-sentence thesis.** We take the standard public goods game and replace "contribute a number" with "actually do the shared work," to measure whether LLM agents cooperate when the choice is enacted rather than reported, and how far the two come apart.
+
+**What differs from the proposal below**
+- Effort is **turns, not tokens**. Each agent has T = 10 turns and each turn closes one ticket. Models cannot control token counts well.
+- The comparison is **Stated vs Done**: the agent either commits to a split of its turns in one reply, or does the work turn by turn. There is no communication round; the teammate is another instance of the same model, and choices stay hidden until the end.
+- The work is MBPP+ coding tickets, graded by tests.
+- Payoff: `u_i = A·sqrt(p(e1+e2)) + β·p·(T − e_i)` with A = 4 and β in {0.7, 1.0, 1.5}. Selfish level `e* = A²/(8β²)`, team-best `e_opt = A²/(2β²)`.
+- Pilots so far ran on Claude Haiku 5.5 through the API (about $9.40 in total), not on Qwen. Nothing has run on the cluster.
+
+**Conventions for the current harness**
+- Never say "public goods game," "private" or "public" in anything the model reads. Use "team board" and "your own queue."
+- No "maximize" instruction in the brief.
+- Keep the teammate's choices hidden (one-shot simultaneous game).
+- Log the raw model text of every call.
+- Plain Python, standard library where possible. One folder per run under `results/`.
+- Code written by the model runs only inside the grader in `tickets.py`. Run scripts that read the dataset with `python3 -I`.
+
+**Not yet in line with the norms below.** Prompts live inside the Python files, runs write CSV rather than JSONL, a run is defined by its command line rather than a config file with a run id and git commit, the scripts call the Anthropic API directly instead of going through one model-client interface, and there are no unit tests. Acceptable for exploratory pilots; fix before any confirmatory run.
+
+**Next.** Rerun the pilot-2 design on a second, stronger model; add more wordings of the brief. See NOTES.md, sections 1 and 5.
+
+## Commands
+
+No packages to install. Claude runs need `ANTHROPIC_API_KEY` in the environment or in a git-ignored `.env`. Details and options are in [README.md](README.md).
+
+- Check tickets and grader (free): `python3 -I tickets.py --validate`
+- Calibration: `python3 -I pair_game.py --calib 60 --out results/calibration/calib`
+- Pilot (spends API money; ask first): `python3 -I pair_game.py --pairs 20 --thinking off,on --workers 10 --out results/<name>/<name>`
+
+## Project (original proposal, 2026-11-03; kept for reference)
 
 **Research question:** Do LLM agents free-ride when effort is costly and the reward is shared?
 
