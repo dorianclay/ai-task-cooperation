@@ -1,0 +1,53 @@
+  20/640 sessions, $0.12, 56s
+  40/640 sessions, $0.22, 104s
+  60/640 sessions, $0.32, 151s
+  80/640 sessions, $0.42, 197s
+  100/640 sessions, $0.53, 244s
+  120/640 sessions, $0.63, 290s
+  140/640 sessions, $0.73, 333s
+  160/640 sessions, $0.83, 383s
+  180/640 sessions, $0.94, 431s
+  200/640 sessions, $1.04, 478s
+  220/640 sessions, $1.14, 520s
+  240/640 sessions, $1.24, 567s
+  260/640 sessions, $1.34, 614s
+  280/640 sessions, $1.43, 652s
+  300/640 sessions, $1.54, 702s
+  320/640 sessions, $1.64, 748s
+  340/640 sessions, $1.75, 794s
+  360/640 sessions, $1.84, 836s
+  380/640 sessions, $1.95, 881s
+  400/640 sessions, $2.04, 923s
+  420/640 sessions, $2.15, 970s
+  440/640 sessions, $2.25, 1013s
+  460/640 sessions, $2.35, 1057s
+  480/640 sessions, $2.45, 1104s
+  500/640 sessions, $2.54, 1143s
+  520/640 sessions, $2.65, 1191s
+  540/640 sessions, $2.74, 1236s
+  560/640 sessions, $2.84, 1277s
+  580/640 sessions, $2.94, 1324s
+  600/640 sessions, $3.04, 1366s
+  620/640 sessions, $3.13, 1407s
+  640/640 sessions, $3.21, 1458s
+
+rule   beta   arm     think     n  team turns  pair total  selfish  team-best  belief  closed%
+hidden hidden done    off      40        6.28       12.55                        2.75     95.5
+hidden hidden done    on       40        8.03       16.05                        3.10     98.5
+hidden hidden stated  off      40        5.00       10.00                        5.00     96.0
+hidden hidden stated  on       40        6.75       13.50                        6.70     98.0
+told   0.7    done    off      40        6.65       13.30      8.2       20.0    1.00     94.2
+told   0.7    done    on       40        8.88       17.75      8.2       20.0    4.00     95.8
+told   0.7    stated  off      40        5.00       10.00      8.2       20.0    5.00     97.2
+told   0.7    stated  on       40        5.58       11.15      8.2       20.0    5.42     97.8
+told   1.0    done    off      40        5.15       10.30      4.0       16.0    0.90     94.8
+told   1.0    done    on       40        7.05       14.10      4.0       16.0    4.15     98.8
+told   1.0    stated  off      40        5.00       10.00      4.0       16.0    5.00     95.2
+told   1.0    stated  on       40        5.75       11.50      4.0       16.0    5.62     97.2
+told   1.5    done    off      40        5.00       10.00      1.8        7.1    1.40     96.0
+told   1.5    done    on       40        6.15       12.30      1.8        7.1    2.90     98.0
+told   1.5    stated  off      40        5.00       10.00      1.8        7.1    5.00     96.5
+told   1.5    stated  on       40        2.83        5.65      1.8        7.1    2.90     97.0
+
+invalid sessions: 0 of 640; turns with no valid submission: 0
+tokens in/out 24269991/1572621, cost $3.21, 1458s

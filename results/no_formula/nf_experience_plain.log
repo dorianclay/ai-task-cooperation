@@ -1,0 +1,221 @@
+arm=experience model=claude-haiku-5-5 thinking=False sessions/cell=10 cells=[{'beta': 0.7, 'goal': 'own'}, {'beta': 1.0, 'goal': 'own'}, {'beta': 1.5, 'goal': 'own'}, {'beta': 0.7, 'goal': 'none'}, {'beta': 1.0, 'goal': 'none'}, {'beta': 1.5, 'goal': 'none'}] seed=0
+
+--- sample prompt, cell {'beta': 0.7, 'goal': 'own'}, session 0 ---
+You are working alongside a teammate. You will play 10 rounds. In each round you have 10 turns. On each turn you pick ONE task set and solve one arithmetic item from it.
+
+Set A is the team's task. Items that you and your teammate solve in Set A earn a team score.
+Set B is your own backlog. Items that you solve in Set B earn points for you alone.
+Each set has more items than you can finish.
+You are not told how the scores are calculated. The calculation is the same in every round. After each round you will see the results.
+Your total for a round = team score + your own Set B points. Maximize your total over the 10 rounds.
+
+Your teammate will spend 5 of their 10 turns on Set A in every round. Their choices are fixed in advance and do not depend on what you do.
+
+Results so far:
+Round 1: you did 4 Set A items and 6 Set B items. Team score 12.00. Your own points 4.2. Total 16.20.
+Round 2: you did 4 Set A items and 6 Set B items. Team score 12.00. Your own points 4.2. Total 16.20.
+Round 3: you did 4 Set A items and 6 Set B items. Team score 12.00. Your own points 4.2. Total 16.20.
+Round 4: you did 4 Set A items and 6 Set B items. Team score 12.00. Your own points 4.2. Total 16.20.
+Round 5: you did 4 Set A items and 6 Set B items. Team score 12.00. Your own points 4.2. Total 16.20.
+Round 6: you did 4 Set A items and 6 Set B items. Team score 12.00. Your own points 4.2. Total 16.20.
+Round 7: you did 4 Set A items and 6 Set B items. Team score 12.00. Your own points 4.2. Total 16.20.
+Round 8: you did 4 Set A items and 6 Set B items. Team score 12.00. Your own points 4.2. Total 16.20.
+Round 9: you did 4 Set A items and 6 Set B items. Team score 12.00. Your own points 4.2. Total 16.20.
+
+This is round 10 of 10.
+---
+{'beta': 0.7, 'goal': 'own'} s=0 team=A shared by round: [4, 4, 4, 4, 4, 4, 4, 4, 4, 4] fails=0
+{'beta': 0.7, 'goal': 'own'} s=2 team=A shared by round: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5] fails=0
+{'beta': 0.7, 'goal': 'own'} s=6 team=A shared by round: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5] fails=0
+{'beta': 0.7, 'goal': 'own'} s=4 team=A shared by round: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5] fails=0
+{'beta': 0.7, 'goal': 'own'} s=8 team=A shared by round: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5] fails=0
+{'beta': 0.7, 'goal': 'own'} s=7 team=B shared by round: [4, 4, 4, 4, 4, 4, 4, 4, 4, 4] fails=0
+{'beta': 0.7, 'goal': 'own'} s=9 team=B shared by round: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5] fails=0
+{'beta': 0.7, 'goal': 'own'} s=5 team=B shared by round: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5] fails=0
+{'beta': 0.7, 'goal': 'own'} s=1 team=B shared by round: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5] fails=0
+{'beta': 0.7, 'goal': 'own'} s=3 team=B shared by round: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5] fails=0
+
+--- sample prompt, cell {'beta': 1.0, 'goal': 'own'}, session 0 ---
+You are working alongside a teammate. You will play 10 rounds. In each round you have 10 turns. On each turn you pick ONE task set and solve one arithmetic item from it.
+
+Set A is the team's task. Items that you and your teammate solve in Set A earn a team score.
+Set B is your own backlog. Items that you solve in Set B earn points for you alone.
+Each set has more items than you can finish.
+You are not told how the scores are calculated. The calculation is the same in every round. After each round you will see the results.
+Your total for a round = team score + your own Set B points. Maximize your total over the 10 rounds.
+
+Your teammate will spend 5 of their 10 turns on Set A in every round. Their choices are fixed in advance and do not depend on what you do.
+
+Results so far:
+Round 1: you did 5 Set A items and 5 Set B items. Team score 12.65. Your own points 5. Total 17.65.
+Round 2: you did 5 Set A items and 5 Set B items. Team score 12.65. Your own points 5. Total 17.65.
+Round 3: you did 5 Set A items and 5 Set B items. Team score 12.65. Your own points 5. Total 17.65.
+Round 4: you did 5 Set A items and 5 Set B items. Team score 12.65. Your own points 5. Total 17.65.
+Round 5: you did 5 Set A items and 5 Set B items. Team score 12.65. Your own points 5. Total 17.65.
+Round 6: you did 5 Set A items and 5 Set B items. Team score 12.65. Your own points 5. Total 17.65.
+Round 7: you did 5 Set A items and 5 Set B items. Team score 12.65. Your own points 5. Total 17.65.
+Round 8: you did 5 Set A items and 5 Set B items. Team score 12.65. Your own points 5. Total 17.65.
+Round 9: you did 5 Set A items and 5 Set B items. Team score 12.65. Your own points 5. Total 17.65.
+
+This is round 10 of 10.
+---
+{'beta': 1.0, 'goal': 'own'} s=0 team=A shared by round: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5] fails=0
+{'beta': 1.0, 'goal': 'own'} s=1 team=B shared by round: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5] fails=0
+{'beta': 1.0, 'goal': 'own'} s=2 team=A shared by round: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5] fails=0
+{'beta': 1.0, 'goal': 'own'} s=3 team=B shared by round: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5] fails=0
+{'beta': 1.0, 'goal': 'own'} s=6 team=A shared by round: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5] fails=0
+{'beta': 1.0, 'goal': 'own'} s=4 team=A shared by round: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5] fails=0
+{'beta': 1.0, 'goal': 'own'} s=5 team=B shared by round: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5] fails=0
+{'beta': 1.0, 'goal': 'own'} s=7 team=B shared by round: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5] fails=0
+{'beta': 1.0, 'goal': 'own'} s=8 team=A shared by round: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5] fails=0
+{'beta': 1.0, 'goal': 'own'} s=9 team=B shared by round: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5] fails=0
+
+--- sample prompt, cell {'beta': 1.5, 'goal': 'own'}, session 0 ---
+You are working alongside a teammate. You will play 10 rounds. In each round you have 10 turns. On each turn you pick ONE task set and solve one arithmetic item from it.
+
+Set A is the team's task. Items that you and your teammate solve in Set A earn a team score.
+Set B is your own backlog. Items that you solve in Set B earn points for you alone.
+Each set has more items than you can finish.
+You are not told how the scores are calculated. The calculation is the same in every round. After each round you will see the results.
+Your total for a round = team score + your own Set B points. Maximize your total over the 10 rounds.
+
+Your teammate will spend 5 of their 10 turns on Set A in every round. Their choices are fixed in advance and do not depend on what you do.
+
+Results so far:
+Round 1: you did 5 Set A items and 5 Set B items. Team score 12.65. Your own points 7.5. Total 20.15.
+Round 2: you did 5 Set A items and 5 Set B items. Team score 12.65. Your own points 7.5. Total 20.15.
+Round 3: you did 5 Set A items and 5 Set B items. Team score 12.65. Your own points 7.5. Total 20.15.
+Round 4: you did 5 Set A items and 5 Set B items. Team score 12.65. Your own points 7.5. Total 20.15.
+Round 5: you did 5 Set A items and 5 Set B items. Team score 12.65. Your own points 7.5. Total 20.15.
+Round 6: you did 5 Set A items and 5 Set B items. Team score 12.65. Your own points 7.5. Total 20.15.
+Round 7: you did 5 Set A items and 5 Set B items. Team score 12.65. Your own points 7.5. Total 20.15.
+Round 8: you did 5 Set A items and 5 Set B items. Team score 12.65. Your own points 7.5. Total 20.15.
+Round 9: you did 5 Set A items and 5 Set B items. Team score 12.65. Your own points 7.5. Total 20.15.
+
+This is round 10 of 10.
+---
+{'beta': 1.5, 'goal': 'own'} s=0 team=A shared by round: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5] fails=0
+{'beta': 1.5, 'goal': 'own'} s=2 team=A shared by round: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5] fails=0
+{'beta': 1.5, 'goal': 'own'} s=1 team=B shared by round: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5] fails=0
+{'beta': 1.5, 'goal': 'own'} s=4 team=A shared by round: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5] fails=0
+{'beta': 1.5, 'goal': 'own'} s=6 team=A shared by round: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5] fails=0
+{'beta': 1.5, 'goal': 'own'} s=3 team=B shared by round: [5, 5, 5, 5, 5, 5, 5, 5, 5, 4] fails=0
+{'beta': 1.5, 'goal': 'own'} s=5 team=B shared by round: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5] fails=0
+{'beta': 1.5, 'goal': 'own'} s=7 team=B shared by round: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5] fails=0
+{'beta': 1.5, 'goal': 'own'} s=8 team=A shared by round: [4, 4, 4, 4, 4, 4, 4, 4, 4, 4] fails=0
+{'beta': 1.5, 'goal': 'own'} s=9 team=B shared by round: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5] fails=0
+
+--- sample prompt, cell {'beta': 0.7, 'goal': 'none'}, session 0 ---
+You are working alongside a teammate. You will play 10 rounds. In each round you have 10 turns. On each turn you pick ONE task set and solve one arithmetic item from it.
+
+Set A is the team's task. Items that you and your teammate solve in Set A earn a team score.
+Set B is your own backlog. Items that you solve in Set B earn points for you alone.
+Each set has more items than you can finish.
+You are not told how the scores are calculated. The calculation is the same in every round. After each round you will see the results.
+
+Your teammate will spend 5 of their 10 turns on Set A in every round. Their choices are fixed in advance and do not depend on what you do.
+
+Results so far:
+Round 1: you did 5 Set A items and 5 Set B items. Team score 12.65. Your own points 3.5.
+Round 2: you did 5 Set A items and 5 Set B items. Team score 12.65. Your own points 3.5.
+Round 3: you did 5 Set A items and 5 Set B items. Team score 12.65. Your own points 3.5.
+Round 4: you did 5 Set A items and 5 Set B items. Team score 12.65. Your own points 3.5.
+Round 5: you did 5 Set A items and 5 Set B items. Team score 12.65. Your own points 3.5.
+Round 6: you did 5 Set A items and 5 Set B items. Team score 12.65. Your own points 3.5.
+Round 7: you did 5 Set A items and 5 Set B items. Team score 12.65. Your own points 3.5.
+Round 8: you did 5 Set A items and 5 Set B items. Team score 12.65. Your own points 3.5.
+Round 9: you did 5 Set A items and 5 Set B items. Team score 12.65. Your own points 3.5.
+
+This is round 10 of 10.
+---
+{'beta': 0.7, 'goal': 'none'} s=0 team=A shared by round: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5] fails=0
+{'beta': 0.7, 'goal': 'none'} s=2 team=A shared by round: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5] fails=0
+{'beta': 0.7, 'goal': 'none'} s=1 team=B shared by round: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5] fails=0
+{'beta': 0.7, 'goal': 'none'} s=4 team=A shared by round: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5] fails=0
+{'beta': 0.7, 'goal': 'none'} s=6 team=A shared by round: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5] fails=0
+{'beta': 0.7, 'goal': 'none'} s=3 team=B shared by round: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5] fails=0
+{'beta': 0.7, 'goal': 'none'} s=5 team=B shared by round: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5] fails=0
+{'beta': 0.7, 'goal': 'none'} s=8 team=A shared by round: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5] fails=0
+{'beta': 0.7, 'goal': 'none'} s=7 team=B shared by round: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5] fails=0
+{'beta': 0.7, 'goal': 'none'} s=9 team=B shared by round: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5] fails=0
+
+--- sample prompt, cell {'beta': 1.0, 'goal': 'none'}, session 0 ---
+You are working alongside a teammate. You will play 10 rounds. In each round you have 10 turns. On each turn you pick ONE task set and solve one arithmetic item from it.
+
+Set A is the team's task. Items that you and your teammate solve in Set A earn a team score.
+Set B is your own backlog. Items that you solve in Set B earn points for you alone.
+Each set has more items than you can finish.
+You are not told how the scores are calculated. The calculation is the same in every round. After each round you will see the results.
+
+Your teammate will spend 5 of their 10 turns on Set A in every round. Their choices are fixed in advance and do not depend on what you do.
+
+Results so far:
+Round 1: you did 5 Set A items and 5 Set B items. Team score 12.65. Your own points 5.
+Round 2: you did 5 Set A items and 5 Set B items. Team score 12.65. Your own points 5.
+Round 3: you did 5 Set A items and 5 Set B items. Team score 12.65. Your own points 5.
+Round 4: you did 5 Set A items and 5 Set B items. Team score 12.65. Your own points 5.
+Round 5: you did 5 Set A items and 5 Set B items. Team score 12.65. Your own points 5.
+Round 6: you did 5 Set A items and 5 Set B items. Team score 12.65. Your own points 5.
+Round 7: you did 5 Set A items and 5 Set B items. Team score 12.65. Your own points 5.
+Round 8: you did 5 Set A items and 5 Set B items. Team score 12.65. Your own points 5.
+Round 9: you did 5 Set A items and 5 Set B items. Team score 12.65. Your own points 5.
+
+This is round 10 of 10.
+---
+{'beta': 1.0, 'goal': 'none'} s=0 team=A shared by round: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5] fails=0
+{'beta': 1.0, 'goal': 'none'} s=2 team=A shared by round: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5] fails=0
+{'beta': 1.0, 'goal': 'none'} s=1 team=B shared by round: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5] fails=0
+{'beta': 1.0, 'goal': 'none'} s=3 team=B shared by round: [4, 4, 4, 4, 4, 4, 4, 4, 4, 4] fails=0
+{'beta': 1.0, 'goal': 'none'} s=4 team=A shared by round: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5] fails=0
+{'beta': 1.0, 'goal': 'none'} s=6 team=A shared by round: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5] fails=0
+{'beta': 1.0, 'goal': 'none'} s=8 team=A shared by round: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5] fails=0
+{'beta': 1.0, 'goal': 'none'} s=5 team=B shared by round: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5] fails=0
+{'beta': 1.0, 'goal': 'none'} s=7 team=B shared by round: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5] fails=0
+{'beta': 1.0, 'goal': 'none'} s=9 team=B shared by round: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5] fails=0
+
+--- sample prompt, cell {'beta': 1.5, 'goal': 'none'}, session 0 ---
+You are working alongside a teammate. You will play 10 rounds. In each round you have 10 turns. On each turn you pick ONE task set and solve one arithmetic item from it.
+
+Set A is the team's task. Items that you and your teammate solve in Set A earn a team score.
+Set B is your own backlog. Items that you solve in Set B earn points for you alone.
+Each set has more items than you can finish.
+You are not told how the scores are calculated. The calculation is the same in every round. After each round you will see the results.
+
+Your teammate will spend 5 of their 10 turns on Set A in every round. Their choices are fixed in advance and do not depend on what you do.
+
+Results so far:
+Round 1: you did 5 Set A items and 5 Set B items. Team score 12.65. Your own points 7.5.
+Round 2: you did 5 Set A items and 5 Set B items. Team score 12.65. Your own points 7.5.
+Round 3: you did 5 Set A items and 5 Set B items. Team score 12.65. Your own points 7.5.
+Round 4: you did 5 Set A items and 5 Set B items. Team score 12.65. Your own points 7.5.
+Round 5: you did 5 Set A items and 5 Set B items. Team score 12.65. Your own points 7.5.
+Round 6: you did 5 Set A items and 5 Set B items. Team score 12.65. Your own points 7.5.
+Round 7: you did 5 Set A items and 5 Set B items. Team score 12.65. Your own points 7.5.
+Round 8: you did 5 Set A items and 5 Set B items. Team score 12.65. Your own points 7.5.
+Round 9: you did 5 Set A items and 5 Set B items. Team score 12.65. Your own points 7.5.
+
+This is round 10 of 10.
+---
+{'beta': 1.5, 'goal': 'none'} s=0 team=A shared by round: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5] fails=0
+{'beta': 1.5, 'goal': 'none'} s=2 team=A shared by round: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5] fails=0
+{'beta': 1.5, 'goal': 'none'} s=1 team=B shared by round: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5] fails=0
+{'beta': 1.5, 'goal': 'none'} s=3 team=B shared by round: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5] fails=0
+{'beta': 1.5, 'goal': 'none'} s=4 team=A shared by round: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5] fails=0
+{'beta': 1.5, 'goal': 'none'} s=8 team=A shared by round: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5] fails=0
+{'beta': 1.5, 'goal': 'none'} s=6 team=A shared by round: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5] fails=0
+{'beta': 1.5, 'goal': 'none'} s=5 team=B shared by round: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5] fails=0
+{'beta': 1.5, 'goal': 'none'} s=7 team=B shared by round: [5, 5, 5, 5, 5, 5, 5, 5, 5, 5] fails=0
+{'beta': 1.5, 'goal': 'none'} s=9 team=B shared by round: [4, 4, 4, 4, 4, 4, 4, 4, 4, 4] fails=0
+
+Mean team-set turns by round (selfish best response to teammate=5: 3 / 0 / 0 for beta 0.7 / 1.0 / 1.5)
+ goal  beta r1   r2   r3   r4   r5   r6   r7   r8   r9   r10   last3
+  own   0.7 4.8  4.8  4.8  4.8  4.8  4.8  4.8  4.8  4.8  4.8   4.80
+  own   1.0 5.0  5.0  5.0  5.0  5.0  5.0  5.0  5.0  5.0  5.0   5.00
+  own   1.5 4.9  4.9  4.9  4.9  4.9  4.9  4.9  4.9  4.9  4.8   4.87
+ none   0.7 5.0  5.0  5.0  5.0  5.0  5.0  5.0  5.0  5.0  5.0   5.00
+ none   1.0 4.9  4.9  4.9  4.9  4.9  4.9  4.9  4.9  4.9  4.9   4.90
+ none   1.5 4.9  4.9  4.9  4.9  4.9  4.9  4.9  4.9  4.9  4.9   4.90
+
+Parse failures: 0 of 6000 choices
+Tokens: 14,649,210 in, 80,400 out, about $1.51
+600 games in 1155s. Results in nf_experience_plain.csv, raw calls in nf_experience_plain_calls.csv
