@@ -1,0 +1,69 @@
+model=claude-haiku-5-5 thinking=False constrained=True episodes/beta=20 seed=0
+beta=0.7  ep=1   pledge=4 shared=3 fails=0 payoff=15.48
+beta=0.7  ep=2   pledge=4 shared=2 fails=0 payoff=16.18
+beta=0.7  ep=3   pledge=4 shared=5 fails=0 payoff=15.5
+beta=0.7  ep=5   pledge=5 shared=5 fails=0 payoff=16.15
+beta=0.7  ep=4   pledge=5 shared=1 fails=0 payoff=16.1
+beta=0.7  ep=0   pledge=4 shared=2 fails=0 payoff=16.18
+beta=0.7  ep=9   pledge=4 shared=6 fails=0 payoff=16.07
+beta=0.7  ep=8   pledge=4 shared=4 fails=0 payoff=16.2
+beta=0.7  ep=10  pledge=5 shared=4 fails=0 payoff=15.51
+beta=0.7  ep=11  pledge=4 shared=5 fails=0 payoff=15.5
+beta=0.7  ep=7   pledge=4 shared=5 fails=0 payoff=16.15
+beta=0.7  ep=6   pledge=4 shared=6 fails=0 payoff=16.07
+beta=0.7  ep=16  pledge=5 shared=4 fails=0 payoff=16.2
+beta=0.7  ep=12  pledge=4 shared=5 fails=0 payoff=16.15
+beta=0.7  ep=15  pledge=4 shared=5 fails=0 payoff=16.15
+beta=0.7  ep=13  pledge=4 shared=5 fails=0 payoff=16.15
+beta=0.7  ep=14  pledge=4 shared=4 fails=0 payoff=16.2
+beta=0.7  ep=17  pledge=5 shared=5 fails=0 payoff=16.15
+beta=0.7  ep=19  pledge=4 shared=5 fails=0 payoff=16.15
+beta=1.0  ep=1   pledge=6 shared=5 fails=0 payoff=17.65
+beta=1.0  ep=3   pledge=3 shared=2 fails=0 payoff=17.8
+beta=0.7  ep=18  pledge=4 shared=3 fails=0 payoff=16.21
+beta=1.0  ep=2   pledge=4 shared=1 fails=0 payoff=18.8
+beta=1.0  ep=0   pledge=3 shared=3 fails=0 payoff=18.31
+beta=1.0  ep=7   pledge=3 shared=3 fails=0 payoff=17.58
+beta=1.0  ep=8   pledge=3 shared=3 fails=0 payoff=18.31
+beta=1.0  ep=9   pledge=0 shared=0 fails=0 payoff=18.94
+beta=1.0  ep=6   pledge=3 shared=3 fails=0 payoff=17.58
+beta=1.0  ep=4   pledge=4 shared=4 fails=0 payoff=17.31
+beta=1.0  ep=5   pledge=3 shared=3 fails=0 payoff=18.31
+beta=1.0  ep=14  pledge=4 shared=4 fails=0 payoff=17.31
+beta=1.0  ep=12  pledge=4 shared=4 fails=0 payoff=18.0
+beta=1.0  ep=10  pledge=3 shared=4 fails=0 payoff=18.0
+beta=1.0  ep=11  pledge=4 shared=4 fails=0 payoff=17.31
+beta=1.0  ep=13  pledge=4 shared=4 fails=0 payoff=17.31
+beta=1.0  ep=15  pledge=4 shared=4 fails=0 payoff=17.31
+beta=1.0  ep=17  pledge=4 shared=3 fails=0 payoff=18.31
+beta=1.0  ep=16  pledge=4 shared=4 fails=0 payoff=18.0
+beta=1.0  ep=18  pledge=4 shared=4 fails=0 payoff=17.31
+beta=1.5  ep=0   pledge=4 shared=1 fails=0 payoff=23.3
+beta=1.5  ep=1   pledge=4 shared=1 fails=0 payoff=23.3
+beta=1.0  ep=19  pledge=3 shared=3 fails=0 payoff=18.31
+beta=1.5  ep=5   pledge=4 shared=2 fails=0 payoff=21.8
+beta=1.5  ep=2   pledge=4 shared=0 fails=0 payoff=23.94
+beta=1.5  ep=6   pledge=4 shared=1 fails=0 payoff=23.3
+beta=1.5  ep=7   pledge=4 shared=1 fails=0 payoff=23.3
+beta=1.5  ep=4   pledge=4 shared=1 fails=0 payoff=23.3
+beta=1.5  ep=3   pledge=4 shared=4 fails=0 payoff=21.0
+beta=1.5  ep=12  pledge=4 shared=2 fails=0 payoff=22.58
+beta=1.5  ep=11  pledge=4 shared=1 fails=0 payoff=22.44
+beta=1.5  ep=10  pledge=4 shared=2 fails=0 payoff=22.58
+beta=1.5  ep=9   pledge=4 shared=1 fails=0 payoff=23.3
+beta=1.5  ep=8   pledge=5 shared=5 fails=0 payoff=20.15
+beta=1.5  ep=13  pledge=4 shared=1 fails=0 payoff=23.3
+beta=1.5  ep=14  pledge=4 shared=2 fails=0 payoff=22.58
+beta=1.5  ep=16  pledge=4 shared=2 fails=0 payoff=22.58
+beta=1.5  ep=18  pledge=5 shared=2 fails=0 payoff=22.58
+beta=1.5  ep=17  pledge=4 shared=3 fails=0 payoff=21.81
+beta=1.5  ep=15  pledge=4 shared=1 fails=0 payoff=23.3
+beta=1.5  ep=19  pledge=4 shared=1 fails=0 payoff=23.3
+
+ beta    e*  e_opt  shared  pledge  say-do     CI  fail%
+  0.7   4.1   10.0    4.20    4.25    0.00   0.02   0.0%
+  1.0   2.0    8.0    3.25    3.50    0.03   0.21   0.0%
+  1.5   0.9    3.6    1.70    4.10    0.24   0.30   0.0%
+
+Tokens: 1,181,740 in, 9,881 out, about $0.12
+60 episodes in 191s. Results in smoke_results_haiku.csv, raw calls in smoke_results_haiku_calls.csv

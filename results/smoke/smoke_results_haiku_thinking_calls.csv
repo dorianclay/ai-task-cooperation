@@ -1,0 +1,1515 @@
+beta,episode,turn,kind,raw,parsed,ok,p_A,thinking
+0.7,3,0,pledge,3,3,1,,"I'm weighing how many of my 10 turns to put toward Set A, since the team score is 4·√N and my teammate already spends 5 turns there. Set B gives about 0.7 per turn, so I'm comparing that against the marginal gain from one more Set A item, which depends on the square-root derivative.
+
+Checking the marginal gains: each extra Set A item adds a bit less than the one before, and the gain stays above 0.7 for the first three items. The fourth drops just below that, so I'll put three turns on Set A.
+
+"
+0.7,3,1,choice,"{""set"": ""A""}",A,1,,
+0.7,3,1,answer,125,A,1,,
+0.7,3,2,choice,"{""set"": ""A""}",A,1,,
+0.7,3,2,answer,170,A,1,,
+0.7,3,3,choice,"{""set"": ""A""}",A,1,,
+0.7,3,3,answer,104,A,1,,
+0.7,3,4,choice,"{""set"": ""B""}",B,1,,
+0.7,3,4,answer,80,B,1,,
+0.7,3,5,choice,"{""set"": ""B""}",B,1,,
+0.7,3,5,answer,80,B,1,,
+0.7,3,6,choice,"{""set"": ""B""}",B,1,,
+0.7,3,6,answer,154,B,1,,
+0.7,3,7,choice,"{""set"": ""B""}",B,1,,
+0.7,3,7,answer,164,B,1,,
+0.7,3,8,choice,"{""set"": ""B""}",B,1,,
+0.7,3,8,answer,97,B,1,,
+0.7,3,9,choice,"{""set"": ""B""}",B,1,,
+0.7,3,9,answer,81,B,1,,
+0.7,3,10,choice,"{""set"": ""B""}",B,1,,
+0.7,3,10,answer,153,B,1,,
+0.7,2,0,pledge,3,3,1,,"I'm working out how many of my 10 turns should go to Set A, since the team score is 4·√N with N the total Set A items solved, and my teammate already spends 5 turns there. Set B pays 0.7 per item, so I'm comparing the marginal gain of a Set A turn against that. I'm differentiating the team score to see how much each extra Set A item adds.
+
+I'm checking where the marginal gain from another Set A turn drops below Set B's 0.7. Starting from the teammate's 5 items, each extra turn adds 4(√(5+k) − √(4+k)), and that stays above 0.7 through k=3 but falls under it at k=4. So I'd spend 3 of my turns on Set A.
+
+"
+0.7,2,1,choice,"{""set"": ""A""}",A,1,,
+0.7,2,1,answer,167,A,1,,
+0.7,2,2,choice,"{""set"": ""A""}",A,1,,
+0.7,2,2,answer,167,A,1,,
+0.7,2,3,choice,"{""set"": ""A""}",A,1,,
+0.7,2,3,answer,161,A,1,,
+0.7,2,4,choice,"{""set"": ""B""}",B,1,,
+0.7,2,4,answer,143,B,1,,
+0.7,2,5,choice,"{""set"": ""B""}",B,1,,
+0.7,2,5,answer,58,B,1,,
+0.7,2,6,choice,"{""set"": ""B""}",B,1,,
+0.7,2,6,answer,110,B,1,,
+0.7,2,7,choice,"{""set"": ""B""}",B,1,,
+0.7,2,7,answer,120,B,1,,
+0.7,2,8,choice,"{""set"": ""B""}",B,1,,
+0.7,2,8,answer,148,B,1,,
+0.7,2,9,choice,"{""set"": ""B""}",B,1,,
+0.7,2,9,answer,55,B,1,,
+0.7,2,10,choice,"{""set"": ""B""}",B,1,,
+0.7,2,10,answer,146,B,1,,
+0.7,1,0,pledge,3,3,1,,"I'm weighing how many of my 10 turns to put into Set A, since the team score grows with the square root of the total Set A solved by both of us. My teammate already plans 5 Set A turns, and the square root's concavity means each extra Set A solve is worth less as the total climbs. I'm comparing that against Set B, which pays 0.7 per item per turn.
+
+I'm checking the marginal value of each extra Set A solve against Set B's 0.7 per turn, and the square root keeps each gain shrinking as the total rises. Going from 5 to 8 total Set A solves still beats 0.7 at each step, but the gain drops under 0.7 near the third one, so I'm settling on about 3 Set A turns. The question asks for just a number, so the answer is 3.
+
+"
+0.7,1,1,choice,"{""set"": ""A""}",A,1,,
+0.7,1,1,answer,63,A,1,,
+0.7,1,2,choice,"{""set"": ""A""}",A,1,,
+0.7,1,2,answer,186,A,1,,
+0.7,1,3,choice,"{""set"": ""B""}",B,1,,
+0.7,1,3,answer,115,B,1,,
+0.7,1,4,choice,"{""set"": ""A""}",A,1,,
+0.7,1,4,answer,162,A,1,,
+0.7,1,5,choice,"{""set"": ""B""}",B,1,,
+0.7,1,5,answer,166,B,1,,
+0.7,1,6,choice,"{""set"": ""B""}",B,1,,
+0.7,1,6,answer,117,B,1,,
+0.7,1,7,choice,"{""set"": ""B""}",B,1,,
+0.7,1,7,answer,189,B,1,,
+0.7,1,8,choice,"{""set"": ""B""}",B,1,,
+0.7,1,8,answer,77,B,1,,
+0.7,1,9,choice,"{""set"": ""B""}",B,1,,
+0.7,1,9,answer,98,B,1,,
+0.7,1,10,choice,"{""set"": ""B""}",B,1,,
+0.7,1,10,answer,75,B,1,,
+0.7,4,0,pledge,3,3,1,,"I need to settle how many of my 10 turns go to Set A, since the team score is 4·√N over the Set A items solved. My teammate is already putting 5 turns there, while Set B gives 0.7 per item. I'm weighing the marginal gain from one more Set A item against that alternative.
+
+I'm checking the marginal gain of each additional Set A item beyond the teammate's five, since each one adds less to the square-root score than the last. The first three of my turns beat Set B's 0.7 per item, but the fourth drops below it, so I'll put three turns into Set A. I still need to check whether Set B has a cap on its items.
+
+"
+0.7,4,1,choice,"{""set"": ""A""}",A,1,,
+0.7,4,1,answer,52,A,1,,
+0.7,4,2,choice,"{""set"": ""A""}",A,1,,
+0.7,4,2,answer,61,A,1,,
+0.7,4,3,choice,"{""set"": ""A""}",A,1,,
+0.7,4,3,answer,118,A,1,,
+0.7,4,4,choice,"{""set"": ""B""}",B,1,,
+0.7,4,4,answer,36,B,1,,
+0.7,4,5,choice,"{""set"": ""B""}",B,1,,
+0.7,4,5,answer,184,B,1,,
+0.7,4,6,choice,"{""set"": ""B""}",B,1,,
+0.7,4,6,answer,80,B,1,,
+0.7,4,7,choice,"{""set"": ""B""}",B,1,,
+0.7,4,7,answer,75,B,1,,
+0.7,4,8,choice,"{""set"": ""B""}",B,1,,
+0.7,4,8,answer,150,B,1,,
+0.7,4,9,choice,"{""set"": ""B""}",B,1,,
+0.7,4,9,answer,108,B,1,,
+0.7,4,10,choice,"{""set"": ""B""}",B,1,,
+0.7,4,10,answer,119,B,1,,
+0.7,0,0,pledge,3,3,1,,"I'm weighing how many of my 10 turns to put into Set A. The team score is 4·√N, where N is the total Set A items solved by both of us, so each extra Set A item is worth less as N grows, with a marginal value of 2/√N. My teammate is already spending 5 turns on A, and I'm comparing that against Set B, which pays 0.7 per item at one item per turn.
+
+I'm checking the marginal gains one item at a time: going from 5 to 6 Set A items is worth about 0.85, and from 6 to 7 about 0.87, both above the 0.7 Set B pays. The next step, 7 to 8, drops to roughly 0.73, still just above 0.7, while 8 to 9 falls to about 0.69, below it, so around three Set A turns looks best.
+
+I'm checking the marginal gain of each further Set A item against the 0.7 Set B pays. The third item clears 0.7 at about 0.73, but the fourth falls to about 0.69, so three Set A turns is the best split.
+
+"
+0.7,0,1,choice,"{""set"": ""A""}",A,1,,
+0.7,0,1,answer,110,A,1,,
+0.7,0,2,choice,"{""set"": ""A""}",A,1,,
+0.7,0,2,answer,150,A,1,,
+0.7,0,3,choice,"{""set"": ""A""}",A,1,,
+0.7,0,3,answer,69,A,1,,
+0.7,0,4,choice,"{""set"": ""B""}",B,1,,
+0.7,0,4,answer,137,B,1,,
+0.7,0,5,choice,"{""set"": ""B""}",B,1,,
+0.7,0,5,answer,77,B,1,,
+0.7,0,6,choice,"{""set"": ""B""}",B,1,,
+0.7,0,6,answer,119,B,1,,
+0.7,0,7,choice,"{""set"": ""B""}",B,1,,
+0.7,0,7,answer,116,B,1,,
+0.7,0,8,choice,"{""set"": ""B""}",B,1,,
+0.7,0,8,answer,110,B,1,,
+0.7,0,9,choice,"{""set"": ""B""}",B,1,,
+0.7,0,9,answer,128,B,1,,
+0.7,0,10,choice,"{""set"": ""B""}",B,1,,
+0.7,0,10,answer,138,B,1,,
+0.7,5,0,pledge,3,3,1,,"I'm weighing how to split my 10 turns, since the team score is 4·√N and my teammate already covers 5 Set A items. Each Set A turn adds to N, while Set B gives a flatter 0.7 per turn, so I'm checking where the concave score stops rewarding more Set A work.
+
+I'm checking the marginal gain of each Set A item against the flat 0.7 from Set B, using the team score 4·√(5+k). The gain stays above 0.7 for the first three items and drops below it at the fourth, so three Set A turns is the optimum.
+
+"
+0.7,5,1,choice,"{""set"": ""A""}",A,1,,
+0.7,5,1,answer,66,A,1,,
+0.7,5,2,choice,"{""set"": ""A""}",A,1,,
+0.7,5,2,answer,108,A,1,,
+0.7,5,3,choice,"{""set"": ""A""}",A,1,,
+0.7,5,3,answer,187,A,1,,
+0.7,5,4,choice,"{""set"": ""B""}",B,1,,
+0.7,5,4,answer,124,B,1,,
+0.7,5,5,choice,"{""set"": ""B""}",B,1,,
+0.7,5,5,answer,122,B,1,,
+0.7,5,6,choice,"{""set"": ""B""}",B,1,,
+0.7,5,6,answer,124,B,1,,
+0.7,5,7,choice,"{""set"": ""B""}",B,1,,
+0.7,5,7,answer,130,B,1,,
+0.7,5,8,choice,"{""set"": ""B""}",B,1,,
+0.7,5,8,answer,139,B,1,,
+0.7,5,9,choice,"{""set"": ""B""}",B,1,,
+0.7,5,9,answer,122,B,1,,
+0.7,5,10,choice,"{""set"": ""B""}",B,1,,
+0.7,5,10,answer,99,B,1,,
+0.7,8,0,pledge,3,3,1,,"I'm weighing how many of my 10 turns to put into Set A, since the team score is 4·√N where N counts Set A items solved by both of us. My teammate is already spending 5 turns there, and I'm comparing that against Set B, which pays 0.7 per item at roughly one item per turn.
+
+Assuming the teammate's five turns mean N starts at 5, I'm testing how many of my turns to put into Set A against Set B's 0.7 per item. Checking k from 0 to 10, the total peaks at k=3 (about 16.21), just ahead of k=4 (16.2), so I'll go with 3.
+
+"
+0.7,8,1,choice,"{""set"": ""A""}",A,1,,
+0.7,8,1,answer,142,A,1,,
+0.7,8,2,choice,"{""set"": ""A""}",A,1,,
+0.7,8,2,answer,115,A,1,,
+0.7,8,3,choice,"{""set"": ""A""}",A,1,,
+0.7,8,3,answer,86,A,1,,
+0.7,8,4,choice,"{""set"": ""B""}",B,1,,
+0.7,8,4,answer,86,B,1,,
+0.7,8,5,choice,"{""set"": ""B""}",B,1,,
+0.7,8,5,answer,130,B,1,,
+0.7,8,6,choice,"{""set"": ""B""}",B,1,,
+0.7,8,6,answer,115,B,1,,
+0.7,8,7,choice,"{""set"": ""B""}",B,1,,
+0.7,8,7,answer,181,B,1,,
+0.7,8,8,choice,"{""set"": ""B""}",B,1,,
+0.7,8,8,answer,151,B,1,,
+0.7,8,9,choice,"{""set"": ""B""}",B,1,,
+0.7,8,9,answer,113,B,1,,
+0.7,8,10,choice,"{""set"": ""B""}",B,1,,
+0.7,8,10,answer,121,B,1,,
+0.7,6,0,pledge,3,3,1,,"I need to settle how many of my 10 turns go to Set A. Set A gives one item per turn, Set B gives 0.7 per turn, and the team score is 4*sqrt(N), where N is the total Set A solved, so I'm checking the marginal value of a Set A turn, which is 2/sqrt(N), given the teammate's 5 Set A solves.
+
+I'm working through the marginal gain of each additional Set A turn, checking it against the 0.7 I'd get from Set B. The gain stays above 0.7 for the first three turns and drops below it on the fourth, so I'll put about three of my turns into Set A.
+
+"
+0.7,6,1,choice,"{""set"": ""A""}",A,1,,
+0.7,6,1,answer,108,A,1,,
+0.7,6,2,choice,"{""set"": ""A""}",A,1,,
+0.7,6,2,answer,87,A,1,,
+0.7,6,3,choice,"{""set"": ""A""}",A,1,,
+0.7,6,3,answer,160,A,1,,
+0.7,6,4,choice,"{""set"": ""B""}",B,1,,
+0.7,6,4,answer,84,B,1,,
+0.7,6,5,choice,"{""set"": ""B""}",B,1,,
+0.7,6,5,answer,97,B,1,,
+0.7,6,6,choice,"{""set"": ""B""}",B,1,,
+0.7,6,6,answer,188,B,1,,
+0.7,6,7,choice,"{""set"": ""B""}",B,1,,
+0.7,6,7,answer,99,B,1,,
+0.7,6,8,choice,"{""set"": ""B""}",B,1,,
+0.7,6,8,answer,151,B,1,,
+0.7,6,9,choice,"{""set"": ""B""}",B,1,,
+0.7,6,9,answer,112,B,1,,
+0.7,6,10,choice,"{""set"": ""B""}",B,1,,
+0.7,6,10,answer,93,B,1,,
+0.7,10,0,pledge,3,3,1,,"I'm weighing how to split my 10 turns, so I'm checking how each Set A solve changes the team score, which is concave in N. The marginal gain works out to roughly 2/sqrt(N), and I'm considering what the teammate's five Set A turns would add to that.
+
+I'm checking the marginal gains for the next few Set A items: each one at N=5+k is roughly 4(sqrt(5+k)-sqrt(4+k)), and it drops below the 0.7 Set B rate at k=4. So I'd put about three turns on Set A, which gives an answer of 3.
+
+"
+0.7,10,1,choice,"{""set"": ""A""}",A,1,,
+0.7,10,1,answer,113,A,1,,
+0.7,10,2,choice,"{""set"": ""A""}",A,1,,
+0.7,10,2,answer,97,A,1,,
+0.7,10,3,choice,"{""set"": ""A""}",A,1,,
+0.7,10,3,answer,89,A,1,,
+0.7,10,4,choice,"{""set"": ""B""}",B,1,,
+0.7,10,4,answer,57,B,1,,
+0.7,10,5,choice,"{""set"": ""B""}",B,1,,
+0.7,10,5,answer,83,B,1,,
+0.7,10,6,choice,"{""set"": ""B""}",B,1,,
+0.7,10,6,answer,140,B,1,,
+0.7,10,7,choice,"{""set"": ""B""}",B,1,,
+0.7,10,7,answer,128,B,1,,
+0.7,10,8,choice,"{""set"": ""B""}",B,1,,
+0.7,10,8,answer,107,B,1,,
+0.7,10,9,choice,"{""set"": ""B""}",B,1,,
+0.7,10,9,answer,36,B,1,,
+0.7,10,10,choice,"{""set"": ""B""}",B,1,,
+0.7,10,10,answer,155,B,1,,
+0.7,9,0,pledge,4,4,1,,"I'm working out how many of my 10 turns should go to Set A, and I need to answer with just a number. The teammate is spending 5 turns on Set A, so I'm weighing how the sqrt concavity of the team score changes the marginal value of each additional Set A item compared with Set B's flat 0.7 points.
+
+I'm checking how the marginal gain from each Set A item compares to Set B's flat 0.7, taking the teammate's 5 items as the starting point. Set A stays better until the total reaches about 8, so I'd spend 4 of my 10 turns there and 6 on Set B.
+
+"
+0.7,9,1,choice,"{""set"": ""A""}",A,1,,
+0.7,9,1,answer,66,A,1,,
+0.7,9,2,choice,"{""set"": ""A""}",A,1,,
+0.7,9,2,answer,100,A,1,,
+0.7,9,3,choice,"{""set"": ""A""}",A,1,,
+0.7,9,3,answer,55,A,1,,
+0.7,9,4,choice,"{""set"": ""A""}",A,1,,
+0.7,9,4,answer,106,A,1,,
+0.7,9,5,choice,"{""set"": ""B""}",B,1,,
+0.7,9,5,answer,102,B,1,,
+0.7,9,6,choice,"{""set"": ""B""}",B,1,,
+0.7,9,6,answer,156,B,1,,
+0.7,9,7,choice,"{""set"": ""B""}",B,1,,
+0.7,9,7,answer,154,B,1,,
+0.7,9,8,choice,"{""set"": ""B""}",B,1,,
+0.7,9,8,answer,82,B,1,,
+0.7,9,9,choice,"{""set"": ""B""}",B,1,,
+0.7,9,9,answer,114,B,1,,
+0.7,9,10,choice,"{""set"": ""B""}",B,1,,
+0.7,9,10,answer,103,B,1,,
+0.7,7,0,pledge,3,3,1,,"I'm weighing how to split my 10 turns, since my teammate spends 5 on Set A and the team score rises as 4·√N. The marginal payoff of another A item is 2/√N, which I'll compare against the 0.7 per turn I'd get from Set B.
+
+I'm checking the marginal value of each extra Set A item beyond the teammate's five, which is 4·(√(N+1) − √N) at N around 5. For the first few turns that stays above the 0.7 I'd get from Set B, but by the fourth turn it drops below, so I'm working out where the crossover falls and comparing total payoffs at k=3 and k=4.
+
+I'm comparing the totals for k=3, k=4, and k=2 against each other: about 16.21, 16.2, and 16.18 respectively. They're close, but k=3 comes out highest, so I'm settling on 3 turns for Set A.
+
+"
+0.7,7,1,choice,"{""set"": ""A""}",A,1,,
+0.7,7,1,answer,94,A,1,,
+0.7,7,2,choice,"{""set"": ""A""}",A,1,,
+0.7,7,2,answer,122,A,1,,
+0.7,7,3,choice,"{""set"": ""A""}",A,1,,
+0.7,7,3,answer,124,A,1,,
+0.7,7,4,choice,"{""set"": ""B""}",B,1,,
+0.7,7,4,answer,39,B,1,,
+0.7,7,5,choice,"{""set"": ""B""}",B,1,,
+0.7,7,5,answer,102,B,1,,
+0.7,7,6,choice,"{""set"": ""B""}",B,1,,
+0.7,7,6,answer,94,B,1,,
+0.7,7,7,choice,"{""set"": ""B""}",B,1,,
+0.7,7,7,answer,96,B,1,,
+0.7,7,8,choice,"{""set"": ""B""}",B,1,,
+0.7,7,8,answer,133,B,1,,
+0.7,7,9,choice,"{""set"": ""B""}",B,1,,
+0.7,7,9,answer,61,B,1,,
+0.7,7,10,choice,"{""set"": ""B""}",B,1,,
+0.7,7,10,answer,130,B,1,,
+0.7,11,0,pledge,3,3,1,,"I'm working out how many of my 10 turns to put toward Set A. The team score is 4·√N, where N counts the Set A items solved by both of us. My teammate is spending 5 turns on Set A, and Set B pays 0.7 per item. If I add k Set A items on top of their 5, N becomes 5 + k, so I'm checking how much each extra Set A item adds to the team score.
+
+I'm checking the marginal gain of each extra Set A item against Set B's 0.7. The gains stay above 0.7 through about 8 total Set A items, so with my teammate's 5 I should do 3 Set A items and 7 Set B.
+
+"
+0.7,11,1,choice,"{""set"": ""A""}",A,1,,
+0.7,11,1,answer,167,A,1,,
+0.7,11,2,choice,"{""set"": ""A""}",A,1,,
+0.7,11,2,answer,114,A,1,,
+0.7,11,3,choice,"{""set"": ""A""}",A,1,,
+0.7,11,3,answer,182,A,1,,
+0.7,11,4,choice,"{""set"": ""B""}",B,1,,
+0.7,11,4,answer,109,B,1,,
+0.7,11,5,choice,"{""set"": ""B""}",B,1,,
+0.7,11,5,answer,132,B,1,,
+0.7,11,6,choice,"{""set"": ""B""}",B,1,,
+0.7,11,6,answer,45,B,1,,
+0.7,11,7,choice,"{""set"": ""B""}",B,1,,
+0.7,11,7,answer,122,B,1,,
+0.7,11,8,choice,"{""set"": ""B""}",B,1,,
+0.7,11,8,answer,47,B,1,,
+0.7,11,9,choice,"{""set"": ""B""}",B,1,,
+0.7,11,9,answer,140,B,1,,
+0.7,11,10,choice,"{""set"": ""B""}",B,1,,
+0.7,11,10,answer,82,B,1,,
+0.7,12,0,pledge,3,3,1,,"I'm weighing how many of my 10 turns to put on Set A against a sure 0.7 per turn from Set B. The team score is 4*sqrt(N), and my teammate already gives 5 turns to A, so each extra item I add is worth a little less than the one before. I'm about to compare the value of k turns on A with the guaranteed Set B payoff.
+
+I'm treating my k turns on Set A as adding to the teammate's 5, so the team score is 4*sqrt(5+k) and my remaining 10-k turns give 0.7 each. Working through k from 0 to 5, the total peaks at k=3, about 16.21.
+
+"
+0.7,12,1,choice,"{""set"": ""A""}",A,1,,
+0.7,12,1,answer,126,A,1,,
+0.7,12,2,choice,"{""set"": ""A""}",A,1,,
+0.7,12,2,answer,119,A,1,,
+0.7,12,3,choice,"{""set"": ""A""}",A,1,,
+0.7,12,3,answer,145,A,1,,
+0.7,12,4,choice,"{""set"": ""B""}",B,1,,
+0.7,12,4,answer,179,B,1,,
+0.7,12,5,choice,"{""set"": ""B""}",B,1,,
+0.7,12,5,answer,81,B,1,,
+0.7,12,6,choice,"{""set"": ""B""}",B,1,,
+0.7,12,6,answer,131,B,1,,
+0.7,12,7,choice,"{""set"": ""A""}",A,1,,
+0.7,12,7,answer,152,A,1,,
+0.7,12,8,choice,"{""set"": ""B""}",B,1,,
+0.7,12,8,answer,136,B,1,,
+0.7,12,9,choice,"{""set"": ""B""}",B,1,,
+0.7,12,9,answer,133,B,1,,
+0.7,12,10,choice,"{""set"": ""B""}",B,1,,
+0.7,12,10,answer,69,B,1,,
+0.7,13,0,pledge,3,3,1,,"I'm working out how to split my 10 turns between the two sets, and I'm treating the team score as 4*sqrt(N), where N counts items both of us solve. My teammate's 5 Set A turns already feed into N, so my own Set A items would raise the score at a rate of 2/sqrt(N). Set B pays a flat 0.7 per turn, and I'm weighing that against Set A's marginal return.
+
+I'm comparing totals for each split of the 10 turns, with the teammate's 5 items giving N = 5 + k. Going through k = 0 to 5, the combined score peaks at k = 3, with about 16.21.
+
+"
+0.7,13,1,choice,"{""set"": ""A""}",A,1,,
+0.7,13,1,answer,123,A,1,,
+0.7,13,2,choice,"{""set"": ""A""}",A,1,,
+0.7,13,2,answer,114,A,1,,
+0.7,13,3,choice,"{""set"": ""A""}",A,1,,
+0.7,13,3,answer,144,A,1,,
+0.7,13,4,choice,"{""set"": ""B""}",B,1,,
+0.7,13,4,answer,82,B,1,,
+0.7,13,5,choice,"{""set"": ""B""}",B,1,,"Since the plan was three A turns, six remain, and none of them need to be A, so I'll choose B.
+
+"
+0.7,13,5,answer,128,B,1,,
+0.7,13,6,choice,"{""set"": ""B""}",B,1,,
+0.7,13,6,answer,78,B,1,,
+0.7,13,7,choice,"{""set"": ""B""}",B,1,,
+0.7,13,7,answer,123,B,1,,
+0.7,13,8,choice,"{""set"": ""B""}",B,1,,
+0.7,13,8,answer,136,B,1,,
+0.7,13,9,choice,"{""set"": ""B""}",B,1,,
+0.7,13,9,answer,106,B,1,,
+0.7,13,10,choice,"{""set"": ""B""}",B,1,,
+0.7,13,10,answer,155,B,1,,
+0.7,16,0,pledge,3,3,1,,"I'm weighing how to split my 10 turns between Set A and Set B. The team score is 4·√N, which flattens out as N grows, and my teammate already puts 5 turns into Set A. Each Set B item is worth 0.7 to me, so I need to compare that against the diminishing gains from more Set A items.
+
+I'm checking the marginal gains: each extra Set A item adds less to the team score, and by the fourth turn the gain drops below the 0.7 I'd get from Set B. So three turns on Set A is where it stops being worth it, and I'll put the remaining seven into Set B.
+
+"
+0.7,16,1,choice,"{""set"": ""A""}",A,1,,
+0.7,16,1,answer,153,A,1,,
+0.7,16,2,choice,"{""set"": ""A""}",A,1,,
+0.7,16,2,answer,117,A,1,,
+0.7,16,3,choice,"{""set"": ""A""}",A,1,,
+0.7,16,3,answer,115,A,1,,
+0.7,16,4,choice,"{""set"": ""B""}",B,1,,
+0.7,16,4,answer,99,B,1,,
+0.7,16,5,choice,"{""set"": ""B""}",B,1,,
+0.7,16,5,answer,191,B,1,,
+0.7,16,6,choice,"{""set"": ""B""}",B,1,,
+0.7,16,6,answer,108,B,1,,
+0.7,16,7,choice,"{""set"": ""B""}",B,1,,
+0.7,16,7,answer,95,B,1,,
+0.7,16,8,choice,"{""set"": ""B""}",B,1,,
+0.7,16,8,answer,119,B,1,,
+0.7,16,9,choice,"{""set"": ""B""}",B,1,,
+0.7,16,9,answer,62,B,1,,
+0.7,16,10,choice,"{""set"": ""B""}",B,1,,
+0.7,16,10,answer,136,B,1,,
+0.7,15,0,pledge,3,3,1,,"I need to settle how many of my 10 turns go to Set A. The team score is 4·√N, where N is the total Set A solved by both of us, and my teammate is already spending 5 turns there. The marginal gain from one more Set A item is 2/√N, which I want to set against the 0.7 per turn Set B offers. If I put k turns into A, N comes to 5 + k, assuming
+
+I'm checking the team score for different numbers of Set A turns, where the teammate's 5 solves stay fixed. The marginal gain from each A turn drops below Set B's 0.7 at the fourth turn, so I'll stop at three.
+
+"
+0.7,15,1,choice,"{""set"": ""A""}",A,1,,
+0.7,15,1,answer,87,A,1,,
+0.7,15,2,choice,"{""set"": ""A""}",A,1,,
+0.7,15,2,answer,154,A,1,,
+0.7,15,3,choice,"{""set"": ""A""}",A,1,,
+0.7,15,3,answer,84,A,1,,
+0.7,15,4,choice,"{""set"": ""B""}",B,1,,
+0.7,15,4,answer,134,B,1,,
+0.7,15,5,choice,"{""set"": ""B""}",B,1,,
+0.7,15,5,answer,61,B,1,,
+0.7,15,6,choice,"{""set"": ""B""}",B,1,,
+0.7,15,6,answer,77,B,1,,
+0.7,15,7,choice,"{""set"": ""B""}",B,1,,
+0.7,15,7,answer,90,B,1,,
+0.7,15,8,choice,"{""set"": ""B""}",B,1,,
+0.7,15,8,answer,153,B,1,,
+0.7,15,9,choice,"{""set"": ""B""}",B,1,,
+0.7,15,9,answer,139,B,1,,
+0.7,15,10,choice,"{""set"": ""B""}",B,1,,
+0.7,15,10,answer,91,B,1,,
+0.7,14,0,pledge,2,2,1,,"I'm weighing how to split my 10 turns between the two sets, and I want to know what a Set A item is worth to the team. The team score is 4 times the square root of N, so the marginal gain from one more Set A item is 2 over the square root of N. Set B pays a flat 0.7 per turn, so I'll compare that against the Set A payoff at the current N.
+
+I'm checking the marginal payoff for each extra Set A item once the teammate's five are counted. The first two clear Set B's 0.7, but the third falls below it, so I'll stop at two.
+
+"
+0.7,14,1,choice,"{""set"": ""A""}",A,1,,
+0.7,14,1,answer,91,A,1,,
+0.7,14,2,choice,"{""set"": ""A""}",A,1,,
+0.7,14,2,answer,181,A,1,,
+0.7,14,3,choice,"{""set"": ""B""}",B,1,,
+0.7,14,3,answer,115,B,1,,
+0.7,14,4,choice,"{""set"": ""B""}",B,1,,
+0.7,14,4,answer,77,B,1,,
+0.7,14,5,choice,"{""set"": ""B""}",B,1,,
+0.7,14,5,answer,138,B,1,,
+0.7,14,6,choice,"{""set"": ""B""}",B,1,,
+0.7,14,6,answer,56,B,1,,
+0.7,14,7,choice,"{""set"": ""B""}",B,1,,
+0.7,14,7,answer,73,B,1,,
+0.7,14,8,choice,"{""set"": ""B""}",B,1,,
+0.7,14,8,answer,115,B,1,,
+0.7,14,9,choice,"{""set"": ""B""}",B,1,,
+0.7,14,9,answer,106,B,1,,
+0.7,14,10,choice,"{""set"": ""B""}",B,1,,
+0.7,14,10,answer,54,B,1,,
+0.7,17,0,pledge,3,3,1,,"I'm working out how many of my 10 turns should go to Set A, since the question wants just a number. Team score is 4·√N, so the marginal value of a Set A item is 2/√N, while Set B pays 0.7 per item at roughly one turn each. My teammate already spends 5 turns on A, so I'm estimating the total A items from there.
+
+I'm weighing each option for how many of my turns go to Set A, using 4√(5+x) for the team score plus 0.7 per remaining Set B item. Comparing the totals across x from 0 to 5, the sum peaks at x=3 (about 16.21), just ahead of x=4 (16.2), so 3 is the answer.
+
+"
+0.7,17,1,choice,"{""set"": ""A""}",A,1,,
+0.7,17,1,answer,76,A,1,,
+0.7,17,2,choice,"{""set"": ""A""}",A,1,,
+0.7,17,2,answer,136,A,1,,
+0.7,17,3,choice,"{""set"": ""A""}",A,1,,
+0.7,17,3,answer,41,A,1,,
+0.7,17,4,choice,"{""set"": ""B""}",B,1,,
+0.7,17,4,answer,109,B,1,,
+0.7,17,5,choice,"{""set"": ""B""}",B,1,,
+0.7,17,5,answer,111,B,1,,
+0.7,17,6,choice,"{""set"": ""B""}",B,1,,
+0.7,17,6,answer,40,B,1,,
+0.7,17,7,choice,"{""set"": ""A""}",A,1,,
+0.7,17,7,answer,130,A,1,,
+0.7,17,8,choice,"{""set"": ""B""}",B,1,,
+0.7,17,8,answer,113,B,1,,
+0.7,17,9,choice,"{""set"": ""A""}",A,1,,
+0.7,17,9,answer,67,A,1,,
+0.7,17,10,choice,"{""set"": ""B""}",B,1,,
+0.7,17,10,answer,156,B,1,,
+0.7,18,0,pledge,3,3,1,,"I'm weighing how to split my 10 turns between Set A and Set B, since the team score is 4·√N over items both of us solve. My teammate already takes 5 turns on A, so each extra A turn I spend adds roughly one item, with marginal value 2/√N, while Set B gives about 0.7 per turn.
+
+I'm checking the remaining totals: with k=3 I get about 16.21, against 16.2 for k=4 and 16.18 for k=2. That makes three turns on Set A the best split, though it's a close call with k=4.
+
+"
+0.7,18,1,choice,"{""set"": ""A""}",A,1,,
+0.7,18,1,answer,86,A,1,,
+0.7,18,2,choice,"{""set"": ""A""}",A,1,,
+0.7,18,2,answer,83,A,1,,
+0.7,18,3,choice,"{""set"": ""A""}",A,1,,
+0.7,18,3,answer,60,A,1,,
+0.7,18,4,choice,"{""set"": ""B""}",B,1,,
+0.7,18,4,answer,46,B,1,,
+0.7,18,5,choice,"{""set"": ""B""}",B,1,,
+0.7,18,5,answer,111,B,1,,
+0.7,18,6,choice,"{""set"": ""B""}",B,1,,
+0.7,18,6,answer,110,B,1,,
+0.7,18,7,choice,"{""set"": ""B""}",B,1,,
+0.7,18,7,answer,82,B,1,,
+0.7,18,8,choice,"{""set"": ""B""}",B,1,,
+0.7,18,8,answer,156,B,1,,
+0.7,18,9,choice,"{""set"": ""B""}",B,1,,
+0.7,18,9,answer,119,B,1,,
+0.7,18,10,choice,"{""set"": ""B""}",B,1,,
+0.7,18,10,answer,135,B,1,,
+0.7,19,0,pledge,3,3,1,,"I'm weighing how to split my 10 turns between Set A and Set B. The team score is 4·√N, where N counts the Set A items both of us solve, and my teammate is already spending 5 turns on Set A, so adding my own Set A items raises N while Set B pays a flat 0.7 per item.
+
+Working out the marginal gain of each extra Set A turn: going from k to k+1 adds 4(√(6+k) − √(5+k)), which is above the 0.7 Set B pays for the first three turns and drops below it at the fourth. So about three Set A turns is the best split.
+
+"
+0.7,19,1,choice,"{""set"": ""A""}",A,1,,
+0.7,19,1,answer,170,A,1,,
+0.7,19,2,choice,"{""set"": ""A""}",A,1,,
+0.7,19,2,answer,122,A,1,,
+0.7,19,3,choice,"{""set"": ""A""}",A,1,,
+0.7,19,3,answer,113,A,1,,
+0.7,19,4,choice,"{""set"": ""B""}",B,1,,
+0.7,19,4,answer,58,B,1,,
+0.7,19,5,choice,"{""set"": ""B""}",B,1,,
+0.7,19,5,answer,113,B,1,,
+0.7,19,6,choice,"{""set"": ""B""}",B,1,,
+0.7,19,6,answer,147,B,1,,
+0.7,19,7,choice,"{""set"": ""B""}",B,1,,
+0.7,19,7,answer,94,B,1,,
+0.7,19,8,choice,"{""set"": ""B""}",B,1,,
+0.7,19,8,answer,173,B,1,,
+0.7,19,9,choice,"{""set"": ""B""}",B,1,,
+0.7,19,9,answer,162,B,1,,
+0.7,19,10,choice,"{""set"": ""B""}",B,1,,
+0.7,19,10,answer,160,B,1,,
+1.0,1,0,pledge,0,0,1,,"I'm working out how to split my 10 turns, with the teammate already putting 5 into Set A and the team score on Set A depending on the square root of the combined count, so I'm setting up the total as 5 plus my turns on A.
+
+I'm comparing totals for x = 0, 1, and 2 turns on Set A, using 4·√(5+x) plus the remaining Set B points. The total drops as x grows, so spending nothing on A comes out ahead at about 18.94.
+
+"
+1.0,1,1,choice,"{""set"": ""B""}",B,1,,
+1.0,1,1,answer,56,B,1,,
+1.0,1,2,choice,"{""set"": ""B""}",B,1,,
+1.0,1,2,answer,33,B,1,,
+1.0,1,3,choice,"{""set"": ""B""}",B,1,,
+1.0,1,3,answer,122,B,1,,
+1.0,1,4,choice,"{""set"": ""B""}",B,1,,
+1.0,1,4,answer,154,B,1,,
+1.0,1,5,choice,"{""set"": ""B""}",B,1,,
+1.0,1,5,answer,56,B,1,,
+1.0,1,6,choice,"{""set"": ""B""}",B,1,,
+1.0,1,6,answer,127,B,1,,
+1.0,1,7,choice,"{""set"": ""B""}",B,1,,
+1.0,1,7,answer,180,B,1,,
+1.0,1,8,choice,"{""set"": ""B""}",B,1,,
+1.0,1,8,answer,91,B,1,,
+1.0,1,9,choice,"{""set"": ""B""}",B,1,,
+1.0,1,9,answer,95,B,1,,
+1.0,1,10,choice,"{""set"": ""B""}",B,1,,
+1.0,1,10,answer,107,B,1,,
+1.0,2,0,pledge,0,0,1,,"I'm weighing how to split my 10 turns. Set A's team score grows only with the square root of the shared count, so each extra item helps less, while Set B gives a guaranteed point per item with no teammate involvement.
+
+I'm checking the marginal value of a Set A item when the teammate already covers 5. At k=1 the gain is about 0.85 and at k=2 about 0.79, both below the guaranteed point from Set B, so spending turns on Set A looks worse each time.
+
+"
+1.0,2,1,choice,"{""set"": ""B""}",B,1,,
+1.0,2,1,answer,185,B,1,,
+1.0,2,2,choice,"{""set"": ""B""}",B,1,,
+1.0,2,2,answer,101,B,1,,
+1.0,2,3,choice,"{""set"": ""B""}",B,1,,
+1.0,2,3,answer,192,B,1,,
+1.0,2,4,choice,"{""set"": ""B""}",B,1,,
+1.0,2,4,answer,91,B,1,,
+1.0,2,5,choice,"{""set"": ""B""}",B,1,,
+1.0,2,5,answer,145,B,1,,
+1.0,2,6,choice,"{""set"": ""B""}",B,1,,
+1.0,2,6,answer,133,B,1,,
+1.0,2,7,choice,"{""set"": ""B""}",B,1,,
+1.0,2,7,answer,116,B,1,,
+1.0,2,8,choice,"{""set"": ""B""}",B,1,,
+1.0,2,8,answer,97,B,1,,
+1.0,2,9,choice,"{""set"": ""B""}",B,1,,
+1.0,2,9,answer,52,B,1,,
+1.0,2,10,choice,"{""set"": ""B""}",B,1,,
+1.0,2,10,answer,113,B,1,,
+1.0,3,0,pledge,0,0,1,,"I'm weighing how to split my 10 turns between the two task sets, since the team score depends on the combined Set A items solved.
+
+I'm comparing the team score curve against the Set B points for each split of my 10 turns. With the teammate's 5 Set A items, the team score rises only slowly, so at every split the gain from one more Set A turn is smaller than the Set B point it costs. Zero Set A turns comes out best.
+
+"
+1.0,3,1,choice,"{""set"": ""B""}",B,1,,
+1.0,3,1,answer,76,B,1,,
+1.0,3,2,choice,"{""set"": ""B""}",B,1,,
+1.0,3,2,answer,128,B,1,,
+1.0,3,3,choice,"{""set"": ""B""}",B,1,,
+1.0,3,3,answer,57,B,1,,
+1.0,3,4,choice,"{""set"": ""B""}",B,1,,
+1.0,3,4,answer,32,B,1,,
+1.0,3,5,choice,"{""set"": ""B""}",B,1,,
+1.0,3,5,answer,90,B,1,,
+1.0,3,6,choice,"{""set"": ""B""}",B,1,,
+1.0,3,6,answer,34,B,1,,
+1.0,3,7,choice,"{""set"": ""B""}",B,1,,
+1.0,3,7,answer,101,B,1,,
+1.0,3,8,choice,"{""set"": ""B""}",B,1,,
+1.0,3,8,answer,99,B,1,,
+1.0,3,9,choice,"{""set"": ""B""}",B,1,,
+1.0,3,9,answer,164,B,1,,
+1.0,3,10,choice,"{""set"": ""B""}",B,1,,
+1.0,3,10,answer,107,B,1,,
+1.0,0,0,pledge,0,0,1,,"I'm weighing whether to put my turns into Set A, which the teammate's five turns already feed into a square-root score, or into Set B, where each turn earns a guaranteed point for me alone.
+
+I'm checking the marginal value of each of my Set A turns on top of the teammate's five, and each one adds less to the square-root score than the last. The first turn adds about 0.85, which is less than the guaranteed point from Set B, so Set A looks weaker from the second turn on.
+
+I'm working out that Set A only pays off for me on the first turn, where it adds about 0.85. After that, each turn is worth less than the guaranteed point from Set B, and with the teammate's contribution counted, Set A alone would give about 8.94 for the team, so I'm leaning toward putting none of my turns there.
+
+"
+1.0,0,1,choice,"{""set"": ""B""}",B,1,,
+1.0,0,1,answer,159,B,1,,
+1.0,0,2,choice,"{""set"": ""B""}",B,1,,
+1.0,0,2,answer,125,B,1,,
+1.0,0,3,choice,"{""set"": ""B""}",B,1,,
+1.0,0,3,answer,107,B,1,,
+1.0,0,4,choice,"{""set"": ""B""}",B,1,,
+1.0,0,4,answer,124,B,1,,
+1.0,0,5,choice,"{""set"": ""B""}",B,1,,
+1.0,0,5,answer,178,B,1,,
+1.0,0,6,choice,"{""set"": ""B""}",B,1,,
+1.0,0,6,answer,35,B,1,,
+1.0,0,7,choice,"{""set"": ""B""}",B,1,,
+1.0,0,7,answer,120,B,1,,
+1.0,0,8,choice,"{""set"": ""B""}",B,1,,
+1.0,0,8,answer,136,B,1,,
+1.0,0,9,choice,"{""set"": ""B""}",B,1,,
+1.0,0,9,answer,131,B,1,,
+1.0,0,10,choice,"{""set"": ""B""}",B,1,,
+1.0,0,10,answer,145,B,1,,
+1.0,4,0,pledge,0,0,1,,"I'm weighing how many of my 10 turns to put into Set A, given that the team score is 4·√N and the teammate already covers 5 turns there. The marginal gain from one more shared Set A item is 2/√N, which I need to compare against the flat point per turn from Set B.
+
+I'm checking the team score for different splits: with the teammate's 5 Set A items, each extra turn on A adds less to the team's √-based score, and the totals keep falling as I spend more turns there. Spending none on Set A gives the highest total, so my answer is 0.
+
+"
+1.0,4,1,choice,"{""set"": ""B""}",B,1,,
+1.0,4,1,answer,132,B,1,,
+1.0,4,2,choice,"{""set"": ""B""}",B,1,,
+1.0,4,2,answer,87,B,1,,
+1.0,4,3,choice,"{""set"": ""B""}",B,1,,
+1.0,4,3,answer,105,B,1,,
+1.0,4,4,choice,"{""set"": ""B""}",B,1,,
+1.0,4,4,answer,33,B,1,,
+1.0,4,5,choice,"{""set"": ""B""}",B,1,,
+1.0,4,5,answer,116,B,1,,
+1.0,4,6,choice,"{""set"": ""B""}",B,1,,
+1.0,4,6,answer,91,B,1,,
+1.0,4,7,choice,"{""set"": ""B""}",B,1,,
+1.0,4,7,answer,159,B,1,,
+1.0,4,8,choice,"{""set"": ""B""}",B,1,,
+1.0,4,8,answer,116,B,1,,
+1.0,4,9,choice,"{""set"": ""B""}",B,1,,
+1.0,4,9,answer,112,B,1,,
+1.0,4,10,choice,"{""set"": ""B""}",B,1,,
+1.0,4,10,answer,105,B,1,,
+1.0,7,0,pledge,0,0,1,,"I'm weighing how many of my 10 turns to put on Set A, since the team score grows with the square root of total A items solved and my teammate already covers 5 of them. Set B items give me a flat point each, so I'm comparing that against the diminishing returns of adding more A items.
+
+I'm running the numbers for x=0, 1, 3, and 5 turns on Set A, weighing the team's sqrt score against the flat point per Set B item. Full Set A gives about 15.5, while spending nothing on A and taking all 10 B items comes out highest at roughly 18.9, so I'm leaning toward x=0.
+
+"
+1.0,7,1,choice,"{""set"": ""B""}",B,1,,
+1.0,7,1,answer,106,B,1,,
+1.0,7,2,choice,"{""set"": ""B""}",B,1,,
+1.0,7,2,answer,119,B,1,,
+1.0,7,3,choice,"{""set"": ""B""}",B,1,,
+1.0,7,3,answer,127,B,1,,
+1.0,7,4,choice,"{""set"": ""B""}",B,1,,
+1.0,7,4,answer,116,B,1,,
+1.0,7,5,choice,"{""set"": ""B""}",B,1,,
+1.0,7,5,answer,125,B,1,,
+1.0,7,6,choice,"{""set"": ""B""}",B,1,,
+1.0,7,6,answer,71,B,1,,
+1.0,7,7,choice,"{""set"": ""B""}",B,1,,
+1.0,7,7,answer,105,B,1,,
+1.0,7,8,choice,"{""set"": ""B""}",B,1,,
+1.0,7,8,answer,106,B,1,,
+1.0,7,9,choice,"{""set"": ""B""}",B,1,,
+1.0,7,9,answer,117,B,1,,
+1.0,7,10,choice,"{""set"": ""B""}",B,1,,
+1.0,7,10,answer,75,B,1,,
+1.0,5,0,pledge,0,0,1,,"I'm weighing how to split my 10 turns between Set A and Set B, with the team score being 4 times the square root of the number of Set A items both of us solve. My teammate already covers 5 Set A items, and each of my Set B items is worth a flat point, so I'm comparing what extra Set A turns could add against what Set B turns guarantee.
+
+I'm checking the trade-off at the margin: four times the square root of 5 plus x, against what B guarantees. One extra A turn gains less than a point, and each B turn is worth exactly one, so spending nothing on A looks best, and my answer is 0.
+
+"
+1.0,5,1,choice,"{""set"": ""B""}",B,1,,
+1.0,5,1,answer,114,B,1,,
+1.0,5,2,choice,"{""set"": ""B""}",B,1,,
+1.0,5,2,answer,91,B,1,,
+1.0,5,3,choice,"{""set"": ""B""}",B,1,,
+1.0,5,3,answer,56,B,1,,
+1.0,5,4,choice,"{""set"": ""B""}",B,1,,
+1.0,5,4,answer,71,B,1,,
+1.0,5,5,choice,"{""set"": ""B""}",B,1,,
+1.0,5,5,answer,136,B,1,,
+1.0,5,6,choice,"{""set"": ""B""}",B,1,,
+1.0,5,6,answer,153,B,1,,
+1.0,5,7,choice,"{""set"": ""B""}",B,1,,
+1.0,5,7,answer,99,B,1,,
+1.0,5,8,choice,"{""set"": ""B""}",B,1,,
+1.0,5,8,answer,61,B,1,,
+1.0,5,9,choice,"{""set"": ""B""}",B,1,,
+1.0,5,9,answer,176,B,1,,
+1.0,5,10,choice,"{""set"": ""B""}",B,1,,
+1.0,5,10,answer,117,B,1,,
+1.0,9,0,pledge,0,0,1,,"I'm weighing how to split my 10 turns between Set A and Set B, since the team score is 4·√N and the square root's concavity matters here. If I put x turns on A, the team's A count becomes 5 + x, assuming each of my A turns solves one item and the teammate solves 5, and Set B earns about 1 point per turn.
+
+I'm checking the totals for each split: at x=0 the team plus my B points comes to about 18.94, and that drops to about 18.80 at x=1 and 18.58 at x=2. The marginal gain from one more A turn, 2/√(5+x) − 1, is negative for every x ≥ 0, so spending nothing on A looks best.
+
+"
+1.0,9,1,choice,"{""set"": ""B""}",B,1,,
+1.0,9,1,answer,75,B,1,,
+1.0,9,2,choice,"{""set"": ""B""}",B,1,,
+1.0,9,2,answer,83,B,1,,
+1.0,9,3,choice,"{""set"": ""B""}",B,1,,
+1.0,9,3,answer,155,B,1,,
+1.0,9,4,choice,"{""set"": ""B""}",B,1,,
+1.0,9,4,answer,155,B,1,,
+1.0,9,5,choice,"{""set"": ""B""}",B,1,,
+1.0,9,5,answer,69,B,1,,
+1.0,9,6,choice,"{""set"": ""B""}",B,1,,
+1.0,9,6,answer,84,B,1,,
+1.0,9,7,choice,"{""set"": ""B""}",B,1,,
+1.0,9,7,answer,119,B,1,,
+1.0,9,8,choice,"{""set"": ""B""}",B,1,,
+1.0,9,8,answer,76,B,1,,
+1.0,9,9,choice,"{""set"": ""B""}",B,1,,
+1.0,9,9,answer,125,B,1,,
+1.0,9,10,choice,"{""set"": ""B""}",B,1,,
+1.0,9,10,answer,84,B,1,,
+1.0,6,0,pledge,1,1,1,,"I'm weighing how to split my 10 turns: Set A's team score grows with the square root of jointly solved items, so each extra Set A item adds less than the last, while Set B gives a flat point per item I solve alone.
+
+I'm checking the marginal gain of each Set A item: the first adds about 1.7 points, but the second drops to roughly 0.86, below the 1 point Set B gives per turn. So only the first turn is worth spending on Set A, and the other nine go to Set B.
+
+"
+1.0,6,1,choice,"{""set"": ""A""}",A,1,,
+1.0,6,1,answer,165,A,1,,
+1.0,6,2,choice,"{""set"": ""B""}",B,1,,
+1.0,6,2,answer,137,B,1,,
+1.0,6,3,choice,"{""set"": ""B""}",B,1,,
+1.0,6,3,answer,24,B,1,,
+1.0,6,4,choice,"{""set"": ""B""}",B,1,,
+1.0,6,4,answer,84,B,1,,
+1.0,6,5,choice,"{""set"": ""B""}",B,1,,
+1.0,6,5,answer,113,B,1,,
+1.0,6,6,choice,"{""set"": ""B""}",B,1,,
+1.0,6,6,answer,41,B,1,,
+1.0,6,7,choice,"{""set"": ""B""}",B,1,,
+1.0,6,7,answer,83,B,1,,
+1.0,6,8,choice,"{""set"": ""B""}",B,1,,
+1.0,6,8,answer,152,B,1,,
+1.0,6,9,choice,"{""set"": ""B""}",B,1,,
+1.0,6,9,answer,84,B,1,,
+1.0,6,10,choice,"{""set"": ""B""}",B,1,,
+1.0,6,10,answer,115,B,1,,
+1.0,8,0,pledge,0,0,1,,"I'm working out how many of my 10 turns to put on Set A. The team score is 4 times the square root of the total Set A items, and my teammate covers 5 of them, so if I spend x turns there the total is 5 + x and the score is 4·√(5+x). Set B items are worth a point each but only to me.
+
+I'm comparing the marginal gain of each Set A turn against the flat point from Set B, and checking the totals for x from 0 to 10. Running the numbers, x=0 comes out ahead at about 18.94 versus 15.49 for x=10, so the answer is 0.
+
+"
+1.0,8,1,choice,"{""set"": ""B""}",B,1,,
+1.0,8,1,answer,168,B,1,,
+1.0,8,2,choice,"{""set"": ""B""}",B,1,,
+1.0,8,2,answer,164,B,1,,
+1.0,8,3,choice,"{""set"": ""B""}",B,1,,
+1.0,8,3,answer,58,B,1,,
+1.0,8,4,choice,"{""set"": ""B""}",B,1,,
+1.0,8,4,answer,55,B,1,,
+1.0,8,5,choice,"{""set"": ""B""}",B,1,,
+1.0,8,5,answer,100,B,1,,
+1.0,8,6,choice,"{""set"": ""B""}",B,1,,
+1.0,8,6,answer,52,B,1,,
+1.0,8,7,choice,"{""set"": ""B""}",B,1,,
+1.0,8,7,answer,62,B,1,,
+1.0,8,8,choice,"{""set"": ""B""}",B,1,,
+1.0,8,8,answer,52,B,1,,
+1.0,8,9,choice,"{""set"": ""B""}",B,1,,
+1.0,8,9,answer,138,B,1,,
+1.0,8,10,choice,"{""set"": ""B""}",B,1,,
+1.0,8,10,answer,73,B,1,,
+1.0,10,0,pledge,0,0,1,,"I'm weighing how to split my 10 turns: a teammate already puts 5 turns into Set A, and the team's score on it grows with the square root of the items solved by both. Each turn I spend on Set A would add an item, while each Set B item gives me a direct point, so I'm comparing the two.
+
+I'm comparing the totals for each split: at k=0 the team gets about 8.94 plus 10 points, which is 18.94. At k=1 and k=2 the square-root gain is smaller than the points I'd lose, so the totals drop to 18.80 and 18.58. Spending nothing on Set A comes out best.
+
+"
+1.0,10,1,choice,"{""set"": ""B""}",B,1,,
+1.0,10,1,answer,60,B,1,,
+1.0,10,2,choice,"{""set"": ""B""}",B,1,,
+1.0,10,2,answer,147,B,1,,
+1.0,10,3,choice,"{""set"": ""B""}",B,1,,
+1.0,10,3,answer,110,B,1,,
+1.0,10,4,choice,"{""set"": ""B""}",B,1,,
+1.0,10,4,answer,163,B,1,,
+1.0,10,5,choice,"{""set"": ""B""}",B,1,,
+1.0,10,5,answer,113,B,1,,
+1.0,10,6,choice,"{""set"": ""B""}",B,1,,
+1.0,10,6,answer,89,B,1,,
+1.0,10,7,choice,"{""set"": ""B""}",B,1,,
+1.0,10,7,answer,66,B,1,,
+1.0,10,8,choice,"{""set"": ""B""}",B,1,,
+1.0,10,8,answer,153,B,1,,
+1.0,10,9,choice,"{""set"": ""B""}",B,1,,
+1.0,10,9,answer,196,B,1,,
+1.0,10,10,choice,"{""set"": ""B""}",B,1,,
+1.0,10,10,answer,126,B,1,,
+1.0,12,0,pledge,0,0,1,,"I'm weighing how to split my 10 turns, since the teammate already covers 5 on Set A and each of my Set A turns adds to a concave sqrt payoff, so the marginal gain from more Set A items shrinks as I go.
+
+I'm comparing the totals for each split: with k turns on Set A, the team score is 4·√(5+k) and my Set B points are 10−k. Working through k=0 to k=3, the total falls each time (18.94, 18.80, 18.58, 18.31), so keeping all 10 turns on Set B comes out on top.
+
+"
+1.0,12,1,choice,"{""set"": ""B""}",B,1,,
+1.0,12,1,answer,57,B,1,,
+1.0,12,2,choice,"{""set"": ""B""}",B,1,,
+1.0,12,2,answer,109,B,1,,
+1.0,12,3,choice,"{""set"": ""B""}",B,1,,
+1.0,12,3,answer,177,B,1,,
+1.0,12,4,choice,"{""set"": ""B""}",B,1,,
+1.0,12,4,answer,106,B,1,,
+1.0,12,5,choice,"{""set"": ""B""}",B,1,,
+1.0,12,5,answer,87,B,1,,
+1.0,12,6,choice,"{""set"": ""B""}",B,1,,
+1.0,12,6,answer,133,B,1,,
+1.0,12,7,choice,"{""set"": ""B""}",B,1,,
+1.0,12,7,answer,109,B,1,,
+1.0,12,8,choice,"{""set"": ""B""}",B,1,,
+1.0,12,8,answer,138,B,1,,
+1.0,12,9,choice,"{""set"": ""B""}",B,1,,
+1.0,12,9,answer,59,B,1,,
+1.0,12,10,choice,"{""set"": ""B""}",B,1,,
+1.0,12,10,answer,84,B,1,,
+1.0,11,0,pledge,0,0,1,,"I'm weighing how many of my 10 turns to put into Set A, since the team score grows with the square root of the Set A items both of us solve. My teammate is already taking 5 turns there, while Set B pays a flat point per item. Because the square root flattens out, the extra value from each new Set A item keeps shrinking, so I'm checking where that marginal value drops below what Set B would give me.
+
+I'm checking the marginal value of each Set A item beyond my teammate's 5, and comparing it to the flat point per turn from Set B. At k=1, 2, and 3 the gain is under one point per turn, and at k=5 it totals 3.71 against 5 points on Set B. So Set B looks better for every turn, which points to putting all 10 turns there.
+
+"
+1.0,11,1,choice,"{""set"": ""B""}",B,1,,
+1.0,11,1,answer,47,B,1,,
+1.0,11,2,choice,"{""set"": ""B""}",B,1,,
+1.0,11,2,answer,100,B,1,,
+1.0,11,3,choice,"{""set"": ""B""}",B,1,,
+1.0,11,3,answer,153,B,1,,
+1.0,11,4,choice,"{""set"": ""B""}",B,1,,
+1.0,11,4,answer,105,B,1,,
+1.0,11,5,choice,"{""set"": ""B""}",B,1,,
+1.0,11,5,answer,131,B,1,,
+1.0,11,6,choice,"{""set"": ""B""}",B,1,,
+1.0,11,6,answer,120,B,1,,
+1.0,11,7,choice,"{""set"": ""B""}",B,1,,
+1.0,11,7,answer,84,B,1,,
+1.0,11,8,choice,"{""set"": ""B""}",B,1,,
+1.0,11,8,answer,127,B,1,,
+1.0,11,9,choice,"{""set"": ""B""}",B,1,,
+1.0,11,9,answer,124,B,1,,
+1.0,11,10,choice,"{""set"": ""B""}",B,1,,
+1.0,11,10,answer,129,B,1,,
+1.0,14,0,pledge,0,0,1,,"I'm weighing how many of my 10 turns to put into Set A, since the team score grows with the square root of the number of Set A items both of us solve. My teammate is already spending 5 turns there, and each Set B item is worth a flat point, so I'm comparing the marginal value of each extra Set A item against that.
+
+I'm checking whether a Set A turn is worth it at the margin. The first extra item lifts the team score by about 0.85, which is less than the 1 point I'd lose from Set B, and the gain keeps shrinking with each added item, so I'm leaning toward spending none of my turns on Set A.
+
+"
+1.0,14,1,choice,"{""set"": ""B""}",B,1,,
+1.0,14,1,answer,90,B,1,,
+1.0,14,2,choice,"{""set"": ""B""}",B,1,,
+1.0,14,2,answer,114,B,1,,
+1.0,14,3,choice,"{""set"": ""B""}",B,1,,
+1.0,14,3,answer,68,B,1,,
+1.0,14,4,choice,"{""set"": ""B""}",B,1,,
+1.0,14,4,answer,105,B,1,,
+1.0,14,5,choice,"{""set"": ""B""}",B,1,,
+1.0,14,5,answer,150,B,1,,
+1.0,14,6,choice,"{""set"": ""B""}",B,1,,
+1.0,14,6,answer,85,B,1,,
+1.0,14,7,choice,"{""set"": ""B""}",B,1,,
+1.0,14,7,answer,171,B,1,,
+1.0,14,8,choice,"{""set"": ""B""}",B,1,,
+1.0,14,8,answer,166,B,1,,
+1.0,14,9,choice,"{""set"": ""B""}",B,1,,
+1.0,14,9,answer,108,B,1,,
+1.0,14,10,choice,"{""set"": ""B""}",B,1,,
+1.0,14,10,answer,72,B,1,,
+1.0,13,0,pledge,0,0,1,,"I'm weighing how to split my 10 turns between the two task sets, since the team score depends on how many Set A items get solved by both of us.
+
+I'm checking the marginal gains: moving a turn to Set A adds less than the 1 point a Set B turn gives me alone, and that holds at each step, so I'm leaning toward putting none of my turns on Set A.
+
+"
+1.0,13,1,choice,"{""set"": ""B""}",B,1,,
+1.0,13,1,answer,162,B,1,,
+1.0,13,2,choice,"{""set"": ""B""}",B,1,,
+1.0,13,2,answer,158,B,1,,
+1.0,13,3,choice,"{""set"": ""B""}",B,1,,
+1.0,13,3,answer,99,B,1,,
+1.0,13,4,choice,"{""set"": ""B""}",B,1,,
+1.0,13,4,answer,28,B,1,,
+1.0,13,5,choice,"{""set"": ""B""}",B,1,,
+1.0,13,5,answer,174,B,1,,
+1.0,13,6,choice,"{""set"": ""B""}",B,1,,
+1.0,13,6,answer,117,B,1,,
+1.0,13,7,choice,"{""set"": ""B""}",B,1,,
+1.0,13,7,answer,139,B,1,,
+1.0,13,8,choice,"{""set"": ""B""}",B,1,,
+1.0,13,8,answer,41,B,1,,
+1.0,13,9,choice,"{""set"": ""B""}",B,1,,
+1.0,13,9,answer,120,B,1,,
+1.0,13,10,choice,"{""set"": ""B""}",B,1,,
+1.0,13,10,answer,92,B,1,,
+1.0,15,0,pledge,0,0,1,,"I'm weighing how to split my 10 turns between Set A and Set B. Set A's value is concave in the total number solved, and my teammate already covers 5 Set A items, so each extra item I add contributes less. I'm testing the case where I spend x turns on Set A and the total becomes x+5, assuming each turn solves one item.
+
+I'm checking the payoff at x=0, 1, and 2 turns on Set A, and it keeps falling as I shift turns over. The marginal gain from one more Set A item is below the point I lose from Set B, so the best split is to spend none of my turns on Set A.
+
+"
+1.0,15,1,choice,"{""set"": ""B""}",B,1,,
+1.0,15,1,answer,55,B,1,,
+1.0,15,2,choice,"{""set"": ""B""}",B,1,,
+1.0,15,2,answer,99,B,1,,
+1.0,15,3,choice,"{""set"": ""B""}",B,1,,
+1.0,15,3,answer,103,B,1,,
+1.0,15,4,choice,"{""set"": ""B""}",B,1,,
+1.0,15,4,answer,152,B,1,,
+1.0,15,5,choice,"{""set"": ""B""}",B,1,,
+1.0,15,5,answer,122,B,1,,
+1.0,15,6,choice,"{""set"": ""B""}",B,1,,
+1.0,15,6,answer,166,B,1,,
+1.0,15,7,choice,"{""set"": ""B""}",B,1,,
+1.0,15,7,answer,84,B,1,,
+1.0,15,8,choice,"{""set"": ""B""}",B,1,,
+1.0,15,8,answer,96,B,1,,
+1.0,15,9,choice,"{""set"": ""B""}",B,1,,
+1.0,15,9,answer,103,B,1,,
+1.0,15,10,choice,"{""set"": ""B""}",B,1,,
+1.0,15,10,answer,101,B,1,,
+1.5,1,0,pledge,0,0,1,,"I'm weighing how many of my 10 turns to put on Set A, starting from the team score of 4*sqrt(N) and the fact that my teammate is already spending 5 turns there. The marginal value of another Set A item drops off as N grows, since the derivative is 2/sqrt(N). Set B pays a flat 1.5 per turn, so I'm comparing that against the diminishing return on Set A.
+
+I'm checking the marginal value of a Set A turn once the teammate's 5 are counted: about 0.65 at most, and 0.85 for the very first one. Set B pays a steady 1.5 per turn, which beats both, so I'll spend none of my turns on Set A.
+
+"
+1.5,1,1,choice,"{""set"": ""B""}",B,1,,
+1.5,1,1,answer,101,B,1,,
+1.5,1,2,choice,"{""set"": ""B""}",B,1,,
+1.5,1,2,answer,95,B,1,,
+1.5,1,3,choice,"{""set"": ""B""}",B,1,,
+1.5,1,3,answer,110,B,1,,
+1.5,1,4,choice,"{""set"": ""B""}",B,1,,
+1.5,1,4,answer,116,B,1,,
+1.5,1,5,choice,"{""set"": ""B""}",B,1,,
+1.5,1,5,answer,176,B,1,,
+1.5,1,6,choice,"{""set"": ""B""}",B,1,,
+1.5,1,6,answer,182,B,1,,
+1.5,1,7,choice,"{""set"": ""B""}",B,1,,
+1.5,1,7,answer,98,B,1,,
+1.5,1,8,choice,"{""set"": ""B""}",B,1,,
+1.5,1,8,answer,89,B,1,,
+1.5,1,9,choice,"{""set"": ""B""}",B,1,,
+1.5,1,9,answer,108,B,1,,
+1.5,1,10,choice,"{""set"": ""B""}",B,1,,
+1.5,1,10,answer,103,B,1,,
+1.0,16,0,pledge,3,3,1,,"I'm weighing how many of my 10 turns to put into Set A, since my teammate already covers 5 Set A items and the team score is 4 times the square root of the total. Each Set A item I solve adds to that total, while Set B only earns me a point per item, so I'm comparing the marginal gain on the team score against my own points.
+
+I'm checking the marginal gain of each extra Set A item against my 1 point per Set B turn. The first three items each add more than a point to the team score, but the fourth drops below it, so I'm settling on 3 Set A items.
+
+"
+1.0,16,1,choice,"{""set"": ""A""}",A,1,,
+1.0,16,1,answer,81,A,1,,
+1.0,16,2,choice,"{""set"": ""A""}",A,1,,
+1.0,16,2,answer,95,A,1,,
+1.0,16,3,choice,"{""set"": ""A""}",A,1,,
+1.0,16,3,answer,119,A,1,,
+1.0,16,4,choice,"{""set"": ""B""}",B,1,,
+1.0,16,4,answer,100,B,1,,
+1.0,16,5,choice,"{""set"": ""B""}",B,1,,
+1.0,16,5,answer,70,B,1,,
+1.0,16,6,choice,"{""set"": ""B""}",B,1,,
+1.0,16,6,answer,119,B,1,,
+1.0,16,7,choice,"{""set"": ""B""}",B,1,,
+1.0,16,7,answer,126,B,1,,
+1.0,16,8,choice,"{""set"": ""B""}",B,1,,
+1.0,16,8,answer,109,B,1,,
+1.0,16,9,choice,"{""set"": ""B""}",B,1,,
+1.0,16,9,answer,122,B,1,,
+1.0,16,10,choice,"{""set"": ""B""}",B,1,,
+1.0,16,10,answer,71,B,1,,
+1.5,0,0,pledge,2,2,1,,"I'm weighing how to split my 10 turns between the two sets. The team score is 4*sqrt(N), with N being the total Set A items solved, and my teammate already covers 5 turns of Set A. Set B pays a flat 1.5 points per item, but Set A's square-root curve means each extra Set A item is worth less, so I'm testing what happens to N if I put x turns into Set A.
+
+Checking the marginal values of each extra Set A turn against the 1.5-point Set B payout: the first two turns each add more than 1.5, but the third adds less. Working through the derivative gives the same answer, so I'm settling on 2 turns for Set A.
+
+"
+1.5,0,1,choice,"{""set"": ""A""}",A,1,,
+1.5,0,1,answer,70,A,1,,
+1.5,0,2,choice,"{""set"": ""A""}",A,1,,
+1.5,0,2,answer,142,A,1,,
+1.5,0,3,choice,"{""set"": ""B""}",B,1,,
+1.5,0,3,answer,105,B,1,,
+1.5,0,4,choice,"{""set"": ""B""}",B,1,,
+1.5,0,4,answer,112,B,1,,
+1.5,0,5,choice,"{""set"": ""B""}",B,1,,
+1.5,0,5,answer,182,B,1,,
+1.5,0,6,choice,"{""set"": ""B""}",B,1,,
+1.5,0,6,answer,155,B,1,,
+1.5,0,7,choice,"{""set"": ""B""}",B,1,,
+1.5,0,7,answer,51,B,1,,
+1.5,0,8,choice,"{""set"": ""B""}",B,1,,
+1.5,0,8,answer,129,B,1,,
+1.5,0,9,choice,"{""set"": ""B""}",B,1,,
+1.5,0,9,answer,123,B,1,,
+1.5,0,10,choice,"{""set"": ""B""}",B,1,,
+1.5,0,10,answer,106,B,1,,
+1.0,17,0,pledge,0,0,1,,"I'm weighing how many of my 10 turns to put into Set A, since the team score is 4·√N and my teammate is already handling 5 Set A items. Set B gives a guaranteed point per item, so I'm comparing the diminishing returns of Set A against that.
+
+I'm checking the marginal gain of each extra Set A item: going from 5 to 6 adds about 0.86 to the team score, and that gain keeps shrinking. Set B pays a full point per turn, so every turn should go there, which means zero on Set A.
+
+"
+1.0,17,1,choice,"{""set"": ""B""}",B,1,,
+1.0,17,1,answer,112,B,1,,
+1.0,17,2,choice,"{""set"": ""B""}",B,1,,
+1.0,17,2,answer,158,B,1,,
+1.0,17,3,choice,"{""set"": ""B""}",B,1,,
+1.0,17,3,answer,123,B,1,,
+1.0,17,4,choice,"{""set"": ""B""}",B,1,,
+1.0,17,4,answer,140,B,1,,
+1.0,17,5,choice,"{""set"": ""B""}",B,1,,
+1.0,17,5,answer,131,B,1,,
+1.0,17,6,choice,"{""set"": ""B""}",B,1,,
+1.0,17,6,answer,101,B,1,,
+1.0,17,7,choice,"{""set"": ""B""}",B,1,,
+1.0,17,7,answer,88,B,1,,
+1.0,17,8,choice,"{""set"": ""B""}",B,1,,
+1.0,17,8,answer,104,B,1,,
+1.0,17,9,choice,"{""set"": ""B""}",B,1,,
+1.0,17,9,answer,95,B,1,,
+1.0,17,10,choice,"{""set"": ""B""}",B,1,,
+1.0,17,10,answer,133,B,1,,
+1.0,19,0,pledge,0,0,1,,"I'm weighing how to split my 10 turns, since the team score is 4*sqrt(N) on the combined Set A total, and my teammate already covers 5 Set A turns. Set B points are mine alone, so each turn I put into Set A adds to the sqrt term while costing me a guaranteed point elsewhere. I'm estimating that if I spend x turns on Set A, the team reaches roughly 5+x items.
+
+I'm checking the numbers at x=0, 1, and 2, and they all come out close, with x=0 slightly ahead. The marginal gain from each extra Set A turn is 2/sqrt(5+x), which stays under 1, so spending nothing on Set A is the better choice.
+
+"
+1.0,19,1,choice,"{""set"": ""B""}",B,1,,
+1.0,19,1,answer,71,B,1,,
+1.0,19,2,choice,"{""set"": ""B""}",B,1,,
+1.0,19,2,answer,111,B,1,,
+1.0,19,3,choice,"{""set"": ""B""}",B,1,,
+1.0,19,3,answer,111,B,1,,
+1.0,19,4,choice,"{""set"": ""B""}",B,1,,
+1.0,19,4,answer,117,B,1,,
+1.0,19,5,choice,"{""set"": ""B""}",B,1,,
+1.0,19,5,answer,176,B,1,,
+1.0,19,6,choice,"{""set"": ""B""}",B,1,,
+1.0,19,6,answer,122,B,1,,
+1.0,19,7,choice,"{""set"": ""B""}",B,1,,
+1.0,19,7,answer,149,B,1,,
+1.0,19,8,choice,"{""set"": ""B""}",B,1,,
+1.0,19,8,answer,59,B,1,,
+1.0,19,9,choice,"{""set"": ""B""}",B,1,,
+1.0,19,9,answer,149,B,1,,
+1.0,19,10,choice,"{""set"": ""B""}",B,1,,
+1.0,19,10,answer,129,B,1,,
+1.0,18,0,pledge,0,0,1,,"I'm weighing how to split my 10 turns between Set A and Set B, since the team score on Set A grows concavely with the total solved while my Set B points rise linearly, one per turn.
+
+I'm checking the marginal gains per turn: the first Set A turn is worth about 1.67 points, which beats the 1 point from Set B, but the returns keep shrinking as the count grows.
+
+I'm checking the first Set A turn against Set B: at 4(√6−√5)≈0.85 it's below the 1 point Set B gives, and every later turn is smaller still. That makes Set B the better use of each turn, so I'm leaning toward zero turns on Set A, provided I have Set B items available.
+
+"
+1.0,18,1,choice,"{""set"": ""B""}",B,1,,
+1.0,18,1,answer,107,B,1,,
+1.0,18,2,choice,"{""set"": ""B""}",B,1,,
+1.0,18,2,answer,161,B,1,,
+1.0,18,3,choice,"{""set"": ""B""}",B,1,,
+1.0,18,3,answer,110,B,1,,
+1.0,18,4,choice,"{""set"": ""B""}",B,1,,
+1.0,18,4,answer,96,B,1,,
+1.0,18,5,choice,"{""set"": ""B""}",B,1,,
+1.0,18,5,answer,72,B,1,,
+1.0,18,6,choice,"{""set"": ""B""}",B,1,,
+1.0,18,6,answer,102,B,1,,
+1.0,18,7,choice,"{""set"": ""B""}",B,1,,
+1.0,18,7,answer,150,B,1,,
+1.0,18,8,choice,"{""set"": ""B""}",B,1,,
+1.0,18,8,answer,171,B,1,,
+1.0,18,9,choice,"{""set"": ""B""}",B,1,,
+1.0,18,9,answer,73,B,1,,
+1.0,18,10,choice,"{""set"": ""B""}",B,1,,
+1.0,18,10,answer,123,B,1,,
+1.5,2,0,pledge,0,0,1,,"I'm weighing how many of my 10 turns should go to Set A, since the team score is 4*sqrt(N) and my teammate is already putting 5 turns into A. If I spend k turns on A, N would be k+5, assuming each turn solves one item, and I'm checking that against the Set B alternative worth 1.5 per item.
+
+I'm checking the numbers at each value of k: with 0 turns on A the team score is about 8.94 against 15 from Set B, and k=0 comes out ahead. The marginal gain from A is about 0.89 per turn, below the 1.5 I'd lose from Set B, so I'll put zero turns into A.
+
+"
+1.5,2,1,choice,"{""set"": ""B""}",B,1,,
+1.5,2,1,answer,131,B,1,,
+1.5,2,2,choice,"{""set"": ""B""}",B,1,,
+1.5,2,2,answer,67,B,1,,
+1.5,2,3,choice,"{""set"": ""B""}",B,1,,
+1.5,2,3,answer,104,B,1,,
+1.5,2,4,choice,"{""set"": ""B""}",B,1,,
+1.5,2,4,answer,46,B,1,,
+1.5,2,5,choice,"{""set"": ""B""}",B,1,,
+1.5,2,5,answer,72,B,1,,
+1.5,2,6,choice,"{""set"": ""B""}",B,1,,
+1.5,2,6,answer,97,B,1,,
+1.5,2,7,choice,"{""set"": ""B""}",B,1,,
+1.5,2,7,answer,176,B,1,,
+1.5,2,8,choice,"{""set"": ""B""}",B,1,,
+1.5,2,8,answer,185,B,1,,
+1.5,2,9,choice,"{""set"": ""B""}",B,1,,
+1.5,2,9,answer,182,B,1,,
+1.5,2,10,choice,"{""set"": ""B""}",B,1,,
+1.5,2,10,answer,137,B,1,,
+1.5,3,0,pledge,0,0,1,,"I'm weighing how to split my 10 turns between Set A and Set B. The team score is 4·√N over the total Set A items solved, so the marginal value of another Set A item falls as N grows, with derivative 2/√N. Set B is a flat 1.5 points per item for me alone, and my teammate is already contributing 5 Set A turns.
+
+Checking the teammate's 5 Set A turns as the starting point, the first extra Set A item adds about 0.85 points, which is less than the flat 1.5 from Set B. The gain shrinks further with each added Set A item, so every one of my 10 turns should go to Set B for 15 points.
+
+"
+1.5,3,1,choice,"{""set"": ""B""}",B,1,,
+1.5,3,1,answer,150,B,1,,
+1.5,3,2,choice,"{""set"": ""B""}",B,1,,
+1.5,3,2,answer,57,B,1,,
+1.5,3,3,choice,"{""set"": ""B""}",B,1,,
+1.5,3,3,answer,86,B,1,,
+1.5,3,4,choice,"{""set"": ""B""}",B,1,,
+1.5,3,4,answer,110,B,1,,
+1.5,3,5,choice,"{""set"": ""B""}",B,1,,
+1.5,3,5,answer,125,B,1,,
+1.5,3,6,choice,"{""set"": ""B""}",B,1,,
+1.5,3,6,answer,91,B,1,,
+1.5,3,7,choice,"{""set"": ""B""}",B,1,,
+1.5,3,7,answer,67,B,1,,
+1.5,3,8,choice,"{""set"": ""B""}",B,1,,
+1.5,3,8,answer,112,B,1,,
+1.5,3,9,choice,"{""set"": ""B""}",B,1,,
+1.5,3,9,answer,108,B,1,,
+1.5,3,10,choice,"{""set"": ""B""}",B,1,,
+1.5,3,10,answer,54,B,1,,
+1.5,4,0,pledge,2,2,1,,"I'm weighing how many of my 10 turns to put into Set A, given the team score is 4·√N with N as the items both of us solve. My teammate is already taking 5 Set A items, so each extra one I solve adds to N, but with diminishing returns from the square root, while each Set B item is worth a flat 1.5 points to me.
+
+I'm checking the marginal gains per turn on Set A. The first two turns each add more than the 1.5 points a Set B turn gives, while the third adds less, so I'd put about 2 turns into Set A and the remaining 8 into Set B.
+
+"
+1.5,4,1,choice,"{""set"": ""A""}",A,1,,
+1.5,4,1,answer,59,A,1,,
+1.5,4,2,choice,"{""set"": ""A""}",A,1,,
+1.5,4,2,answer,138,A,1,,
+1.5,4,3,choice,"{""set"": ""B""}",B,1,,
+1.5,4,3,answer,120,B,1,,
+1.5,4,4,choice,"{""set"": ""B""}",B,1,,
+1.5,4,4,answer,157,B,1,,
+1.5,4,5,choice,"{""set"": ""B""}",B,1,,
+1.5,4,5,answer,103,B,1,,
+1.5,4,6,choice,"{""set"": ""B""}",B,1,,
+1.5,4,6,answer,115,B,1,,
+1.5,4,7,choice,"{""set"": ""B""}",B,1,,
+1.5,4,7,answer,122,B,1,,
+1.5,4,8,choice,"{""set"": ""B""}",B,1,,
+1.5,4,8,answer,132,B,1,,
+1.5,4,9,choice,"{""set"": ""B""}",B,1,,
+1.5,4,9,answer,124,B,1,,
+1.5,4,10,choice,"{""set"": ""B""}",B,1,,
+1.5,4,10,answer,115,B,1,,
+1.5,5,0,pledge,0,0,1,,"I'm weighing whether to spend my turns on Set A, since the team score grows with the square root of the total Set A items solved and my teammate is already putting five turns there. Set B pays a flat 1.5 per item for me alone. I'm now working out the marginal value of another Set A item by taking the derivative of 4*sqrt(N).
+
+I'm comparing how the team score grows with each extra Set A item against the flat 1.5 per turn from Set B. Working through k from 0 to 10, the total peaks when I put nothing into Set A, and the first Set A item only adds about 0.86 against the 1.5 I'd lose, so the answer comes out to 0.
+
+"
+1.5,5,1,choice,"{""set"": ""B""}",B,1,,
+1.5,5,1,answer,102,B,1,,
+1.5,5,2,choice,"{""set"": ""B""}",B,1,,
+1.5,5,2,answer,71,B,1,,
+1.5,5,3,choice,"{""set"": ""B""}",B,1,,
+1.5,5,3,answer,137,B,1,,
+1.5,5,4,choice,"{""set"": ""B""}",B,1,,
+1.5,5,4,answer,169,B,1,,
+1.5,5,5,choice,"{""set"": ""B""}",B,1,,
+1.5,5,5,answer,144,B,1,,
+1.5,5,6,choice,"{""set"": ""B""}",B,1,,
+1.5,5,6,answer,116,B,1,,
+1.5,5,7,choice,"{""set"": ""B""}",B,1,,
+1.5,5,7,answer,23,B,1,,
+1.5,5,8,choice,"{""set"": ""B""}",B,1,,
+1.5,5,8,answer,79,B,1,,
+1.5,5,9,choice,"{""set"": ""B""}",B,1,,
+1.5,5,9,answer,131,B,1,,
+1.5,5,10,choice,"{""set"": ""B""}",B,1,,
+1.5,5,10,answer,170,B,1,,
+1.5,6,0,pledge,0,0,1,,"I'm weighing how to split my 10 turns, with the team score being 4·√N where N is the combined Set A count. My teammate covers 5 Set A items, so if I add x more, N becomes 5 + x, and since the score is concave the marginal gain from extra Set A items is shrinking.
+
+I'm checking the marginal gains from each extra Set A item against Set B's fixed 1.5 per turn. Even at my first Set A turn the gain is only about 0.85, and it keeps shrinking, so Set B is the better use of every turn, and my answer is 0.
+
+"
+1.5,6,1,choice,"{""set"": ""B""}",B,1,,
+1.5,6,1,answer,150,B,1,,
+1.5,6,2,choice,"{""set"": ""B""}",B,1,,
+1.5,6,2,answer,108,B,1,,
+1.5,6,3,choice,"{""set"": ""B""}",B,1,,
+1.5,6,3,answer,116,B,1,,
+1.5,6,4,choice,"{""set"": ""B""}",B,1,,
+1.5,6,4,answer,57,B,1,,
+1.5,6,5,choice,"{""set"": ""B""}",B,1,,
+1.5,6,5,answer,108,B,1,,
+1.5,6,6,choice,"{""set"": ""B""}",B,1,,
+1.5,6,6,answer,96,B,1,,
+1.5,6,7,choice,"{""set"": ""B""}",B,1,,
+1.5,6,7,answer,188,B,1,,
+1.5,6,8,choice,"{""set"": ""B""}",B,1,,
+1.5,6,8,answer,75,B,1,,
+1.5,6,9,choice,"{""set"": ""B""}",B,1,,
+1.5,6,9,answer,115,B,1,,
+1.5,6,10,choice,"{""set"": ""B""}",B,1,,
+1.5,6,10,answer,150,B,1,,
+1.5,7,0,pledge,0,0,1,,"I'm working out how to split my 10 turns between Set A and Set B. The team score is 4 times the square root of the total Set A items solved, and my teammate already covers 5 Set A turns. Set B is worth 1.5 points per item and only I can do it, so I'm weighing that against the marginal gain from each extra Set A item.
+
+I'm checking whether the marginal team gain from each extra Set A item, which falls below 0.9 points, beats the 1.5 points per turn from Set B. Since it doesn't, I'm leaning toward putting all 10 turns into Set B, so k=0.
+
+I've confirmed that the first Set A turn is worth about 0.85 points, which is less than the 1.5 points Set B gives, so I'm going to answer 0.
+
+"
+1.5,7,1,choice,"{""set"": ""B""}",B,1,,
+1.5,7,1,answer,93,B,1,,
+1.5,7,2,choice,"{""set"": ""B""}",B,1,,
+1.5,7,2,answer,170,B,1,,
+1.5,7,3,choice,"{""set"": ""B""}",B,1,,
+1.5,7,3,answer,86,B,1,,
+1.5,7,4,choice,"{""set"": ""B""}",B,1,,
+1.5,7,4,answer,156,B,1,,
+1.5,7,5,choice,"{""set"": ""B""}",B,1,,
+1.5,7,5,answer,29,B,1,,
+1.5,7,6,choice,"{""set"": ""B""}",B,1,,
+1.5,7,6,answer,129,B,1,,
+1.5,7,7,choice,"{""set"": ""B""}",B,1,,
+1.5,7,7,answer,185,B,1,,
+1.5,7,8,choice,"{""set"": ""B""}",B,1,,
+1.5,7,8,answer,44,B,1,,
+1.5,7,9,choice,"{""set"": ""B""}",B,1,,
+1.5,7,9,answer,82,B,1,,
+1.5,7,10,choice,"{""set"": ""B""}",B,1,,
+1.5,7,10,answer,95,B,1,,
+1.5,8,0,pledge,0,0,1,,"I'm weighing how many of my 10 turns to put into Set A against Set B. The team score grows with the square root of total Set A items, so each extra Set A item adds less than the one before. My teammate already covers 5 turns of Set A, and I'm checking how that shifts the balance against the flat 1.5 points per Set B item I earn alone.
+
+I'm checking the split with the teammate's 5 turns counted in. Using 4·√(5+x) for the team score plus 1.5 points for each remaining turn, the total is highest at x=0, since the marginal gain from another Set A turn (about 0.89) is below the 1.5 from Set B.
+
+"
+1.5,8,1,choice,"{""set"": ""B""}",B,1,,
+1.5,8,1,answer,123,B,1,,
+1.5,8,2,choice,"{""set"": ""B""}",B,1,,
+1.5,8,2,answer,128,B,1,,
+1.5,8,3,choice,"{""set"": ""B""}",B,1,,
+1.5,8,3,answer,106,B,1,,
+1.5,8,4,choice,"{""set"": ""B""}",B,1,,
+1.5,8,4,answer,20,B,1,,
+1.5,8,5,choice,"{""set"": ""B""}",B,1,,
+1.5,8,5,answer,132,B,1,,
+1.5,8,6,choice,"{""set"": ""B""}",B,1,,
+1.5,8,6,answer,136,B,1,,
+1.5,8,7,choice,"{""set"": ""B""}",B,1,,
+1.5,8,7,answer,77,B,1,,
+1.5,8,8,choice,"{""set"": ""B""}",B,1,,
+1.5,8,8,answer,70,B,1,,
+1.5,8,9,choice,"{""set"": ""B""}",B,1,,
+1.5,8,9,answer,75,B,1,,
+1.5,8,10,choice,"{""set"": ""B""}",B,1,,
+1.5,8,10,answer,97,B,1,,
+1.5,10,0,pledge,0,0,1,,"I'm weighing how to split my 10 turns, since the team score rises with the square root of the combined Set A count. My teammate already covers 5 Set A turns, so each extra Set A item I solve adds roughly 2/√N, and that gain shrinks as N grows. I'm comparing that against Set B's flat 1.5 per turn to see where the balance falls, assuming N lands somewhere around 5 to 10.
+
+Checking the sums against the marginal estimate: the gain per Set A item is around 0.6 to 0.9, which is less than Set B's 1.5. Working through the totals for different splits, each extra Set A turn lowers the combined score, since k=0 gives the highest value at 23.94 versus 23.30 and 22.58 for one and two Set A turns. So I'll put all 10 turns on Set B.
+
+"
+1.5,10,1,choice,"{""set"": ""B""}",B,1,,
+1.5,10,1,answer,51,B,1,,
+1.5,10,2,choice,"{""set"": ""B""}",B,1,,
+1.5,10,2,answer,57,B,1,,
+1.5,10,3,choice,"{""set"": ""B""}",B,1,,
+1.5,10,3,answer,113,B,1,,
+1.5,10,4,choice,"{""set"": ""B""}",B,1,,
+1.5,10,4,answer,112,B,1,,
+1.5,10,5,choice,"{""set"": ""B""}",B,1,,
+1.5,10,5,answer,93,B,1,,
+1.5,10,6,choice,"{""set"": ""B""}",B,1,,
+1.5,10,6,answer,121,B,1,,
+1.5,10,7,choice,"{""set"": ""B""}",B,1,,
+1.5,10,7,answer,173,B,1,,
+1.5,10,8,choice,"{""set"": ""B""}",B,1,,
+1.5,10,8,answer,26,B,1,,
+1.5,10,9,choice,"{""set"": ""B""}",B,1,,
+1.5,10,9,answer,144,B,1,,
+1.5,10,10,choice,"{""set"": ""B""}",B,1,,
+1.5,10,10,answer,142,B,1,,
+1.5,9,0,pledge,0,0,1,,"I'm working out how many of my 10 turns should go to Set A. The team score is 4 times the square root of the total Set A items both of us solve, and my teammate is spending 5 turns on Set A, so I'm weighing that against Set B's 1.5 points per item, which only I get. Because the square root gives diminishing returns, I'm checking how much an extra Set A item is worth if the teammate solves 5 of them and I
+
+Working through the marginal values: with the teammate's 5 items, the first few Set A items each add less than the 1.5 a Set B turn gives, and the gains keep shrinking, so Set B looks better at every step. The one thing I want to confirm is that each turn really yields one item.
+
+"
+1.5,9,1,choice,"{""set"": ""B""}",B,1,,
+1.5,9,1,answer,34,B,1,,
+1.5,9,2,choice,"{""set"": ""B""}",B,1,,
+1.5,9,2,answer,131,B,1,,
+1.5,9,3,choice,"{""set"": ""B""}",B,1,,
+1.5,9,3,answer,109,B,1,,
+1.5,9,4,choice,"{""set"": ""B""}",B,1,,
+1.5,9,4,answer,158,B,1,,
+1.5,9,5,choice,"{""set"": ""B""}",B,1,,
+1.5,9,5,answer,87,B,1,,
+1.5,9,6,choice,"{""set"": ""B""}",B,1,,
+1.5,9,6,answer,95,B,1,,
+1.5,9,7,choice,"{""set"": ""B""}",B,1,,
+1.5,9,7,answer,169,B,1,,
+1.5,9,8,choice,"{""set"": ""B""}",B,1,,
+1.5,9,8,answer,99,B,1,,
+1.5,9,9,choice,"{""set"": ""B""}",B,1,,
+1.5,9,9,answer,113,B,1,,
+1.5,9,10,choice,"{""set"": ""B""}",B,1,,
+1.5,9,10,answer,97,B,1,,
+1.5,11,0,pledge,0,0,1,,"I'm weighing how many of my 10 turns should go to Set A, using the team score of 4*sqrt(N) and the marginal return of each option.
+
+I'm plugging in the values for each split: with k items from me, the team gets 4*sqrt(5+k) and my Set B points are 1.5*(10-k). Checking k=0, 1, 2, 5, and 10, the totals fall from 23.94 to 15.49, so keeping all turns on Set B (k=0) comes out best.
+
+"
+1.5,11,1,choice,"{""set"": ""B""}",B,1,,
+1.5,11,1,answer,124,B,1,,
+1.5,11,2,choice,"{""set"": ""B""}",B,1,,
+1.5,11,2,answer,77,B,1,,
+1.5,11,3,choice,"{""set"": ""B""}",B,1,,
+1.5,11,3,answer,83,B,1,,
+1.5,11,4,choice,"{""set"": ""B""}",B,1,,
+1.5,11,4,answer,64,B,1,,
+1.5,11,5,choice,"{""set"": ""B""}",B,1,,
+1.5,11,5,answer,180,B,1,,
+1.5,11,6,choice,"{""set"": ""B""}",B,1,,
+1.5,11,6,answer,119,B,1,,
+1.5,11,7,choice,"{""set"": ""B""}",B,1,,
+1.5,11,7,answer,102,B,1,,
+1.5,11,8,choice,"{""set"": ""B""}",B,1,,
+1.5,11,8,answer,162,B,1,,
+1.5,11,9,choice,"{""set"": ""B""}",B,1,,
+1.5,11,9,answer,60,B,1,,
+1.5,11,10,choice,"{""set"": ""B""}",B,1,,
+1.5,11,10,answer,120,B,1,,
+1.5,12,0,pledge,0,0,1,,"I'm weighing how many of my 10 turns to put into Set A, given that the team score rises with the square root of the combined Set A count. My teammate is already committing 5 turns there, and Set B pays out 1.5 per item for me alone, so I'm working out whether the marginal gain from more Set A is worth giving up that alone-only value.
+
+I'm checking the Set A payoff against Set B. With the teammate at 5, my first Set A item only adds about 0.83, which is below the 1.5 I'd get per turn from Set B, and the gap only widens with more turns. So spending nothing on Set A looks best.
+
+"
+1.5,12,1,choice,"{""set"": ""B""}",B,1,,
+1.5,12,1,answer,93,B,1,,
+1.5,12,2,choice,"{""set"": ""B""}",B,1,,
+1.5,12,2,answer,133,B,1,,
+1.5,12,3,choice,"{""set"": ""B""}",B,1,,
+1.5,12,3,answer,121,B,1,,
+1.5,12,4,choice,"{""set"": ""B""}",B,1,,
+1.5,12,4,answer,99,B,1,,
+1.5,12,5,choice,"{""set"": ""B""}",B,1,,
+1.5,12,5,answer,83,B,1,,
+1.5,12,6,choice,"{""set"": ""B""}",B,1,,
+1.5,12,6,answer,127,B,1,,
+1.5,12,7,choice,"{""set"": ""B""}",B,1,,
+1.5,12,7,answer,92,B,1,,
+1.5,12,8,choice,"{""set"": ""B""}",B,1,,
+1.5,12,8,answer,62,B,1,,
+1.5,12,9,choice,"{""set"": ""B""}",B,1,,
+1.5,12,9,answer,100,B,1,,
+1.5,12,10,choice,"{""set"": ""B""}",B,1,,
+1.5,12,10,answer,195,B,1,,
+1.5,13,0,pledge,0,0,1,,"I'm weighing how to split my 10 turns, since the team score grows with the square root of total Set A items solved. My teammate is already putting in 5 turns on Set A, and Set B gives me 1.5 points per item on my own, so the extra value from more Set A work keeps shrinking.
+
+I'm checking the payoff at each split: with x turns on Set A, the team gets 4·√(5+x) and I get 1.5·(10−x) from Set B. Working through x=0, 1, 5, and 10, the total peaks at x=0 with about 23.9 points, so putting nothing into Set A looks best.
+
+"
+1.5,13,1,choice,"{""set"": ""B""}",B,1,,
+1.5,13,1,answer,62,B,1,,
+1.5,13,2,choice,"{""set"": ""B""}",B,1,,
+1.5,13,2,answer,104,B,1,,
+1.5,13,3,choice,"{""set"": ""B""}",B,1,,
+1.5,13,3,answer,159,B,1,,
+1.5,13,4,choice,"{""set"": ""B""}",B,1,,
+1.5,13,4,answer,163,B,1,,
+1.5,13,5,choice,"{""set"": ""B""}",B,1,,
+1.5,13,5,answer,84,B,1,,
+1.5,13,6,choice,"{""set"": ""B""}",B,1,,
+1.5,13,6,answer,161,B,1,,
+1.5,13,7,choice,"{""set"": ""B""}",B,1,,
+1.5,13,7,answer,78,B,1,,
+1.5,13,8,choice,"{""set"": ""B""}",B,1,,
+1.5,13,8,answer,81,B,1,,
+1.5,13,9,choice,"{""set"": ""B""}",B,1,,
+1.5,13,9,answer,36,B,1,,
+1.5,13,10,choice,"{""set"": ""B""}",B,1,,"I'm comparing the two options: Set A gives the team about 9.80 against 8.94, a gain of 0.86, while Set B gives 1.5 points. Set B comes out ahead, so I'll go with it.
+
+"
+1.5,13,10,answer,125,B,1,,
+1.5,14,0,pledge,0,0,1,,"I'm weighing how to split my 10 turns, since the team score is 4·√N over Set A items and my teammate already puts in 5 turns there. Set B pays 1.5 per turn for me alone, so I'm checking whether Set A's marginal gain under the square root beats that.
+
+I'm checking the numbers for Set A: with the teammate's 5 items, going to 5 more of mine only adds about 3.7 to the team score, while those same 5 turns on Set B would earn 7.5. Even a single Set A item gains less than 1.5, and at 10 turns it's still well behind Set B, so I'm leaning toward putting none of my turns there.
+
+"
+1.5,14,1,choice,"{""set"": ""B""}",B,1,,
+1.5,14,1,answer,79,B,1,,
+1.5,14,2,choice,"{""set"": ""B""}",B,1,,
+1.5,14,2,answer,66,B,1,,
+1.5,14,3,choice,"{""set"": ""B""}",B,1,,
+1.5,14,3,answer,182,B,1,,
+1.5,14,4,choice,"{""set"": ""B""}",B,1,,
+1.5,14,4,answer,39,B,1,,
+1.5,14,5,choice,"{""set"": ""B""}",B,1,,
+1.5,14,5,answer,132,B,1,,
+1.5,14,6,choice,"{""set"": ""B""}",B,1,,
+1.5,14,6,answer,88,B,1,,
+1.5,14,7,choice,"{""set"": ""B""}",B,1,,
+1.5,14,7,answer,120,B,1,,
+1.5,14,8,choice,"{""set"": ""B""}",B,1,,
+1.5,14,8,answer,76,B,1,,
+1.5,14,9,choice,"{""set"": ""B""}",B,1,,
+1.5,14,9,answer,125,B,1,,
+1.5,14,10,choice,"{""set"": ""B""}",B,1,,
+1.5,14,10,answer,125,B,1,,
+1.5,15,0,pledge,0,0,1,,"I'm weighing how many of my 10 turns to put into Set A against the teammate's fixed 5 turns there. Set A's team score is concave in the total items solved, so each extra Set A turn adds less than the one before, while Set B gives me a flat 1.5 points per item on my own.
+
+I'm checking the totals for each choice of Set A turns: with k turns, the team score is 4*sqrt(5+k) and the Set B points are 1.5*(10-k). Going from 0 to 1 Set A turn gains about 0.86 team points but costs 1.5 Set B points, so the best is zero turns on Set A.
+
+"
+1.5,15,1,choice,"{""set"": ""B""}",B,1,,
+1.5,15,1,answer,112,B,1,,
+1.5,15,2,choice,"{""set"": ""B""}",B,1,,
+1.5,15,2,answer,101,B,1,,
+1.5,15,3,choice,"{""set"": ""B""}",B,1,,
+1.5,15,3,answer,134,B,1,,
+1.5,15,4,choice,"{""set"": ""B""}",B,1,,
+1.5,15,4,answer,76,B,1,,
+1.5,15,5,choice,"{""set"": ""B""}",B,1,,
+1.5,15,5,answer,48,B,1,,
+1.5,15,6,choice,"{""set"": ""B""}",B,1,,
+1.5,15,6,answer,91,B,1,,
+1.5,15,7,choice,"{""set"": ""B""}",B,1,,
+1.5,15,7,answer,88,B,1,,
+1.5,15,8,choice,"{""set"": ""B""}",B,1,,
+1.5,15,8,answer,100,B,1,,
+1.5,15,9,choice,"{""set"": ""B""}",B,1,,
+1.5,15,9,answer,174,B,1,,
+1.5,15,10,choice,"{""set"": ""B""}",B,1,,
+1.5,15,10,answer,77,B,1,,
+1.5,16,0,pledge,0,0,1,,"I'm weighing how many of my 10 turns to put into Set A, given the team score is 4*sqrt(N) with N the combined Set A count. My teammate is already doing 5 Set A turns, and Set B pays 1.5 per item but only counts for me, so each of my B turns is worth about 1.5 points.
+
+Checking the numbers for x turns on Set A: with the teammate's 5 items, the team score is 4·√(5+x) and my B turns give 1.5 each. Going from 0 to 1 Set A turn adds about 0.85 to the team score, which is less than the 1.5 a B turn earns, so putting all 10 turns on B comes out ahead.
+
+"
+1.5,16,1,choice,"{""set"": ""B""}",B,1,,
+1.5,16,1,answer,174,B,1,,
+1.5,16,2,choice,"{""set"": ""B""}",B,1,,
+1.5,16,2,answer,118,B,1,,
+1.5,16,3,choice,"{""set"": ""B""}",B,1,,
+1.5,16,3,answer,116,B,1,,
+1.5,16,4,choice,"{""set"": ""B""}",B,1,,
+1.5,16,4,answer,140,B,1,,
+1.5,16,5,choice,"{""set"": ""B""}",B,1,,
+1.5,16,5,answer,57,B,1,,
+1.5,16,6,choice,"{""set"": ""B""}",B,1,,
+1.5,16,6,answer,82,B,1,,
+1.5,16,7,choice,"{""set"": ""B""}",B,1,,
+1.5,16,7,answer,92,B,1,,
+1.5,16,8,choice,"{""set"": ""B""}",B,1,,
+1.5,16,8,answer,111,B,1,,
+1.5,16,9,choice,"{""set"": ""B""}",B,1,,
+1.5,16,9,answer,104,B,1,,
+1.5,16,10,choice,"{""set"": ""B""}",B,1,,
+1.5,16,10,answer,94,B,1,,
+1.5,17,0,pledge,0,0,1,,"I'm working out how to split my 10 turns between Set A and Set B. The team score on Set A is 4*sqrt(N), so its marginal value is 2/sqrt(N), and I'm checking that against what my teammate has already contributed.
+
+I'm comparing the team score for different numbers of my turns on Set A, with the teammate's 5 solved items included, against the 1.5-per-item value of Set B. The total comes out highest at k=0, with the other values at k=1, 2, 5 and 10 all lower. So I'll put none of my turns on Set A, though I'm still keeping the teammate's own marginal value in mind separately.
+
+"
+1.5,17,1,choice,"{""set"": ""B""}",B,1,,
+1.5,17,1,answer,169,B,1,,
+1.5,17,2,choice,"{""set"": ""B""}",B,1,,
+1.5,17,2,answer,62,B,1,,
+1.5,17,3,choice,"{""set"": ""B""}",B,1,,
+1.5,17,3,answer,56,B,1,,
+1.5,17,4,choice,"{""set"": ""B""}",B,1,,
+1.5,17,4,answer,123,B,1,,
+1.5,17,5,choice,"{""set"": ""B""}",B,1,,
+1.5,17,5,answer,115,B,1,,
+1.5,17,6,choice,"{""set"": ""B""}",B,1,,
+1.5,17,6,answer,52,B,1,,
+1.5,17,7,choice,"{""set"": ""B""}",B,1,,
+1.5,17,7,answer,76,B,1,,
+1.5,17,8,choice,"{""set"": ""B""}",B,1,,
+1.5,17,8,answer,118,B,1,,
+1.5,17,9,choice,"{""set"": ""B""}",B,1,,
+1.5,17,9,answer,168,B,1,,
+1.5,17,10,choice,"{""set"": ""B""}",B,1,,
+1.5,17,10,answer,86,B,1,,
+1.5,18,0,pledge,0,0,1,,"I'm deciding how to split my 10 turns, starting from the team score 4*sqrt(N), where N is the combined count of Set A items solved. My teammate is already putting 5 turns into Set A, and since sqrt is concave, each extra Set A item adds less than the one before. I'm weighing that against Set B, which gives a steady 1.5 per turn if each turn solves one item.
+
+I'm checking the marginal value of each Set A item on top of the teammate's 5, and the first one only adds about 0.85 to the team score, while each Set B turn gives 1.5. The later Set A items add even less, so spending none of my turns on Set A comes out best.
+
+"
+1.5,18,1,choice,"{""set"": ""B""}",B,1,,
+1.5,18,1,answer,147,B,1,,
+1.5,18,2,choice,"{""set"": ""B""}",B,1,,
+1.5,18,2,answer,93,B,1,,
+1.5,18,3,choice,"{""set"": ""B""}",B,1,,
+1.5,18,3,answer,120,B,1,,
+1.5,18,4,choice,"{""set"": ""B""}",B,1,,
+1.5,18,4,answer,88,B,1,,
+1.5,18,5,choice,"{""set"": ""B""}",B,1,,
+1.5,18,5,answer,86,B,1,,
+1.5,18,6,choice,"{""set"": ""B""}",B,1,,
+1.5,18,6,answer,78,B,1,,
+1.5,18,7,choice,"{""set"": ""B""}",B,1,,
+1.5,18,7,answer,39,B,1,,
+1.5,18,8,choice,"{""set"": ""B""}",B,1,,
+1.5,18,8,answer,124,B,1,,
+1.5,18,9,choice,"{""set"": ""B""}",B,1,,
+1.5,18,9,answer,97,B,1,,
+1.5,18,10,choice,"{""set"": ""B""}",B,1,,
+1.5,18,10,answer,171,B,1,,
+1.5,19,0,pledge,0,0,1,,"I'm weighing how many of my 10 turns to put on Set A. The team score is 4√N, so the marginal value of another Set A item is 2/√N. Set B pays 1.5 per item, and my teammate's 5 Set A turns are the baseline I'm working against.
+
+I'm working out what happens if I put x of my turns on Set A, so the team count becomes 5 + x. My Set B score is then 1.5 times the remaining 10 − x turns. Checking x = 0, 1, and 5, the totals come to about 23.9, 23.3, and 20.2, so putting nothing on Set A comes out best.
+
+"
+1.5,19,1,choice,"{""set"": ""B""}",B,1,,
+1.5,19,1,answer,172,B,1,,
+1.5,19,2,choice,"{""set"": ""B""}",B,1,,
+1.5,19,2,answer,105,B,1,,
+1.5,19,3,choice,"{""set"": ""B""}",B,1,,
+1.5,19,3,answer,113,B,1,,
+1.5,19,4,choice,"{""set"": ""B""}",B,1,,
+1.5,19,4,answer,68,B,1,,
+1.5,19,5,choice,"{""set"": ""B""}",B,1,,
+1.5,19,5,answer,180,B,1,,
+1.5,19,6,choice,"{""set"": ""B""}",B,1,,
+1.5,19,6,answer,97,B,1,,
+1.5,19,7,choice,"{""set"": ""B""}",B,1,,
+1.5,19,7,answer,94,B,1,,
+1.5,19,8,choice,"{""set"": ""B""}",B,1,,
+1.5,19,8,answer,144,B,1,,
+1.5,19,9,choice,"{""set"": ""B""}",B,1,,
+1.5,19,9,answer,122,B,1,,
+1.5,19,10,choice,"{""set"": ""B""}",B,1,,
+1.5,19,10,answer,156,B,1,,
