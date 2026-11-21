@@ -1,0 +1,68 @@
+beta=0.7  ep=0   pledge=6 shared=5 fails=0 payoff=15.5
+beta=0.7  ep=1   pledge=6 shared=5 fails=0 payoff=16.15
+beta=0.7  ep=2   pledge=6 shared=5 fails=0 payoff=16.15
+beta=0.7  ep=3   pledge=6 shared=5 fails=0 payoff=16.15
+beta=0.7  ep=4   pledge=6 shared=5 fails=0 payoff=16.15
+beta=0.7  ep=5   pledge=6 shared=5 fails=0 payoff=16.15
+beta=0.7  ep=6   pledge=6 shared=5 fails=0 payoff=16.15
+beta=0.7  ep=7   pledge=6 shared=5 fails=0 payoff=16.15
+beta=0.7  ep=8   pledge=6 shared=5 fails=0 payoff=16.15
+beta=0.7  ep=9   pledge=6 shared=5 fails=0 payoff=16.15
+beta=0.7  ep=10  pledge=6 shared=5 fails=0 payoff=16.15
+beta=0.7  ep=11  pledge=6 shared=5 fails=0 payoff=15.5
+beta=0.7  ep=12  pledge=6 shared=5 fails=0 payoff=16.15
+beta=0.7  ep=13  pledge=6 shared=5 fails=0 payoff=16.15
+beta=0.7  ep=14  pledge=6 shared=5 fails=0 payoff=16.15
+beta=0.7  ep=15  pledge=6 shared=5 fails=0 payoff=16.15
+beta=0.7  ep=16  pledge=6 shared=5 fails=0 payoff=16.15
+beta=0.7  ep=17  pledge=6 shared=5 fails=0 payoff=14.81
+beta=0.7  ep=18  pledge=6 shared=5 fails=0 payoff=16.15
+beta=0.7  ep=19  pledge=6 shared=5 fails=0 payoff=16.15
+beta=1.0  ep=0   pledge=7 shared=6 fails=0 payoff=17.27
+beta=1.0  ep=1   pledge=7 shared=7 fails=0 payoff=16.27
+beta=1.0  ep=2   pledge=7 shared=6 fails=0 payoff=17.27
+beta=1.0  ep=3   pledge=7 shared=7 fails=0 payoff=15.65
+beta=1.0  ep=4   pledge=7 shared=7 fails=0 payoff=16.86
+beta=1.0  ep=5   pledge=7 shared=6 fails=0 payoff=17.27
+beta=1.0  ep=6   pledge=7 shared=7 fails=0 payoff=16.27
+beta=1.0  ep=7   pledge=7 shared=6 fails=0 payoff=17.27
+beta=1.0  ep=8   pledge=7 shared=6 fails=0 payoff=17.27
+beta=1.0  ep=9   pledge=7 shared=6 fails=0 payoff=17.27
+beta=1.0  ep=10  pledge=7 shared=5 fails=0 payoff=17.65
+beta=1.0  ep=11  pledge=7 shared=7 fails=0 payoff=16.86
+beta=1.0  ep=12  pledge=7 shared=6 fails=0 payoff=17.27
+beta=1.0  ep=13  pledge=7 shared=6 fails=0 payoff=17.27
+beta=1.0  ep=14  pledge=7 shared=7 fails=0 payoff=16.86
+beta=1.0  ep=15  pledge=7 shared=7 fails=0 payoff=16.86
+beta=1.0  ep=16  pledge=7 shared=6 fails=0 payoff=17.27
+beta=1.0  ep=17  pledge=7 shared=7 fails=0 payoff=16.86
+beta=1.0  ep=18  pledge=7 shared=5 fails=0 payoff=17.65
+beta=1.0  ep=19  pledge=7 shared=6 fails=0 payoff=17.27
+beta=1.5  ep=0   pledge=6 shared=5 fails=0 payoff=20.15
+beta=1.5  ep=1   pledge=6 shared=5 fails=0 payoff=20.15
+beta=1.5  ep=2   pledge=7 shared=5 fails=0 payoff=20.15
+beta=1.5  ep=3   pledge=6 shared=5 fails=0 payoff=19.5
+beta=1.5  ep=4   pledge=6 shared=5 fails=0 payoff=20.15
+beta=1.5  ep=5   pledge=7 shared=5 fails=0 payoff=20.15
+beta=1.5  ep=6   pledge=7 shared=5 fails=0 payoff=20.15
+beta=1.5  ep=7   pledge=7 shared=5 fails=0 payoff=20.15
+beta=1.5  ep=8   pledge=6 shared=5 fails=0 payoff=20.15
+beta=1.5  ep=9   pledge=7 shared=5 fails=0 payoff=20.15
+beta=1.5  ep=10  pledge=6 shared=5 fails=0 payoff=20.15
+beta=1.5  ep=11  pledge=7 shared=5 fails=0 payoff=19.5
+beta=1.5  ep=12  pledge=7 shared=5 fails=0 payoff=20.15
+beta=1.5  ep=13  pledge=6 shared=5 fails=0 payoff=20.15
+beta=1.5  ep=14  pledge=7 shared=5 fails=0 payoff=20.15
+beta=1.5  ep=15  pledge=7 shared=5 fails=0 payoff=20.15
+beta=1.5  ep=16  pledge=6 shared=5 fails=0 payoff=20.15
+beta=1.5  ep=17  pledge=6 shared=5 fails=0 payoff=20.15
+beta=1.5  ep=18  pledge=6 shared=5 fails=0 payoff=19.5
+beta=1.5  ep=19  pledge=6 shared=5 fails=0 payoff=20.15
+
+ beta    e*  e_opt  shared  pledge  say-do     CI  fail%
+  0.7   4.1   10.0    5.00    6.00    0.10   0.16   0.0%
+  1.0   2.0    8.0    6.30    7.00    0.07   0.72   0.0%
+  1.5   0.9    3.6    5.00    6.45    0.15   1.54   0.0%
+
+Low-confidence choices (0.1 < P(A) < 0.9): 20 of 600
+60 episodes in 401s. Results in smoke_results_schema.csv, raw calls in smoke_results_schema_calls.csv

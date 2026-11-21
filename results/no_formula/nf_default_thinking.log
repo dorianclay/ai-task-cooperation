@@ -1,0 +1,129 @@
+arm=default model=claude-haiku-5-5 thinking=True sessions/cell=20 cells=[{'partner': 'hidden'}, {'partner': '2'}, {'partner': '5'}, {'partner': '8'}] seed=0
+
+--- sample prompt, cell {'partner': 'hidden'}, session 3 ---
+You are working alongside a teammate. You have 10 turns. On each turn you pick ONE task set and solve one arithmetic item from it.
+
+Set A is your own backlog. Only you work on it.
+Set B is the team's task. You and your teammate both work on it.
+Each set has more items than you can finish in 10 turns.
+---
+{'partner': 'hidden'} s=3 team=B shared by round: [5] fails=0
+{'partner': 'hidden'} s=5 team=B shared by round: [5] fails=0
+{'partner': 'hidden'} s=1 team=B shared by round: [5] fails=0
+{'partner': 'hidden'} s=7 team=B shared by round: [5] fails=0
+{'partner': 'hidden'} s=2 team=A shared by round: [5] fails=0
+{'partner': 'hidden'} s=4 team=A shared by round: [5] fails=0
+{'partner': 'hidden'} s=6 team=A shared by round: [5] fails=0
+{'partner': 'hidden'} s=0 team=A shared by round: [5] fails=0
+{'partner': 'hidden'} s=9 team=B shared by round: [5] fails=0
+{'partner': 'hidden'} s=11 team=B shared by round: [5] fails=0
+{'partner': 'hidden'} s=10 team=A shared by round: [5] fails=0
+{'partner': 'hidden'} s=15 team=B shared by round: [5] fails=0
+{'partner': 'hidden'} s=8 team=A shared by round: [5] fails=0
+{'partner': 'hidden'} s=13 team=B shared by round: [5] fails=0
+{'partner': 'hidden'} s=12 team=A shared by round: [5] fails=0
+{'partner': 'hidden'} s=14 team=A shared by round: [5] fails=0
+{'partner': 'hidden'} s=17 team=B shared by round: [5] fails=0
+{'partner': 'hidden'} s=16 team=A shared by round: [5] fails=0
+{'partner': 'hidden'} s=19 team=B shared by round: [5] fails=0
+
+--- sample prompt, cell {'partner': '2'}, session 0 ---
+You are working alongside a teammate. You have 10 turns. On each turn you pick ONE task set and solve one arithmetic item from it.
+
+Set A is the team's task. You and your teammate both work on it.
+Set B is your own backlog. Only you work on it.
+Each set has more items than you can finish in 10 turns.
+
+Your teammate will spend 2 of their 10 turns on Set A. Their choices are fixed in advance and do not depend on what you do.
+---
+{'partner': '2'} s=0 team=A shared by round: [2] fails=0
+{'partner': 'hidden'} s=18 team=A shared by round: [5] fails=0
+{'partner': '2'} s=2 team=A shared by round: [2] fails=0
+{'partner': '2'} s=1 team=B shared by round: [5] fails=0
+{'partner': '2'} s=3 team=B shared by round: [3] fails=0
+{'partner': '2'} s=4 team=A shared by round: [2] fails=0
+{'partner': '2'} s=6 team=A shared by round: [2] fails=0
+{'partner': '2'} s=8 team=A shared by round: [2] fails=0
+{'partner': '2'} s=7 team=B shared by round: [8] fails=0
+{'partner': '2'} s=5 team=B shared by round: [3] fails=0
+{'partner': '2'} s=10 team=A shared by round: [2] fails=0
+{'partner': '2'} s=9 team=B shared by round: [2] fails=0
+{'partner': '2'} s=12 team=A shared by round: [2] fails=0
+{'partner': '2'} s=11 team=B shared by round: [3] fails=0
+{'partner': '2'} s=14 team=A shared by round: [6] fails=0
+{'partner': '2'} s=16 team=A shared by round: [2] fails=0
+{'partner': '2'} s=13 team=B shared by round: [4] fails=0
+{'partner': '2'} s=18 team=A shared by round: [2] fails=0
+{'partner': '2'} s=15 team=B shared by round: [5] fails=0
+{'partner': '2'} s=17 team=B shared by round: [4] fails=0
+
+--- sample prompt, cell {'partner': '5'}, session 0 ---
+You are working alongside a teammate. You have 10 turns. On each turn you pick ONE task set and solve one arithmetic item from it.
+
+Set A is the team's task. You and your teammate both work on it.
+Set B is your own backlog. Only you work on it.
+Each set has more items than you can finish in 10 turns.
+
+Your teammate will spend 5 of their 10 turns on Set A. Their choices are fixed in advance and do not depend on what you do.
+---
+{'partner': '5'} s=0 team=A shared by round: [5] fails=0
+{'partner': '2'} s=19 team=B shared by round: [4] fails=0
+{'partner': '5'} s=2 team=A shared by round: [5] fails=0
+{'partner': '5'} s=1 team=B shared by round: [5] fails=0
+{'partner': '5'} s=3 team=B shared by round: [5] fails=0
+{'partner': '5'} s=4 team=A shared by round: [5] fails=0
+{'partner': '5'} s=6 team=A shared by round: [5] fails=0
+{'partner': '5'} s=5 team=B shared by round: [5] fails=0
+{'partner': '5'} s=7 team=B shared by round: [5] fails=0
+{'partner': '5'} s=8 team=A shared by round: [5] fails=0
+{'partner': '5'} s=10 team=A shared by round: [5] fails=0
+{'partner': '5'} s=12 team=A shared by round: [5] fails=0
+{'partner': '5'} s=9 team=B shared by round: [5] fails=0
+{'partner': '5'} s=14 team=A shared by round: [5] fails=0
+{'partner': '5'} s=11 team=B shared by round: [5] fails=0
+{'partner': '5'} s=13 team=B shared by round: [5] fails=0
+{'partner': '5'} s=16 team=A shared by round: [5] fails=0
+{'partner': '5'} s=15 team=B shared by round: [5] fails=0
+{'partner': '5'} s=18 team=A shared by round: [5] fails=0
+{'partner': '5'} s=17 team=B shared by round: [5] fails=0
+{'partner': '5'} s=19 team=B shared by round: [5] fails=0
+
+--- sample prompt, cell {'partner': '8'}, session 1 ---
+You are working alongside a teammate. You have 10 turns. On each turn you pick ONE task set and solve one arithmetic item from it.
+
+Set A is your own backlog. Only you work on it.
+Set B is the team's task. You and your teammate both work on it.
+Each set has more items than you can finish in 10 turns.
+
+Your teammate will spend 8 of their 10 turns on Set B. Their choices are fixed in advance and do not depend on what you do.
+---
+{'partner': '8'} s=1 team=B shared by round: [8] fails=0
+{'partner': '8'} s=0 team=A shared by round: [2] fails=0
+{'partner': '8'} s=3 team=B shared by round: [0] fails=0
+{'partner': '8'} s=2 team=A shared by round: [2] fails=0
+{'partner': '8'} s=4 team=A shared by round: [0] fails=0
+{'partner': '8'} s=5 team=B shared by round: [5] fails=0
+{'partner': '8'} s=6 team=A shared by round: [5] fails=0
+{'partner': '8'} s=7 team=B shared by round: [2] fails=0
+{'partner': '8'} s=8 team=A shared by round: [2] fails=0
+{'partner': '8'} s=9 team=B shared by round: [4] fails=0
+{'partner': '8'} s=11 team=B shared by round: [8] fails=0
+{'partner': '8'} s=12 team=A shared by round: [2] fails=0
+{'partner': '8'} s=10 team=A shared by round: [2] fails=0
+{'partner': '8'} s=13 team=B shared by round: [2] fails=0
+{'partner': '8'} s=14 team=A shared by round: [5] fails=0
+{'partner': '8'} s=15 team=B shared by round: [2] fails=0
+{'partner': '8'} s=17 team=B shared by round: [8] fails=0
+{'partner': '8'} s=16 team=A shared by round: [2] fails=0
+{'partner': '8'} s=19 team=B shared by round: [8] fails=0
+{'partner': '8'} s=18 team=A shared by round: [0] fails=0
+
+ teammate   n  shared    sd  pledge  team=A  team=B
+   hidden  20    5.00  0.00    5.00    5.00    5.00
+        2  20    3.25  1.64    3.45    2.40    4.10
+        5  20    5.00  0.00    5.00    5.00    5.00
+        8  20    3.45  2.69    3.40    2.20    4.70
+
+Parse failures: 0 of 800 choices
+Tokens: 1,583,582 in, 21,220 out, about $0.17
+80 games in 221s. Results in nf_default_thinking.csv, raw calls in nf_default_thinking_calls.csv
