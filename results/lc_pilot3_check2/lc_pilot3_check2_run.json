@@ -1,0 +1,36 @@
+{
+ "run_id": "lc_pilot3_check2-20261127T200404",
+ "date": "2026-11-27T20:04:04",
+ "git_commit": "08ddde43aa2d60a31f31d225a8e2c95f93ab1d68",
+ "git_dirty": true,
+ "args": {
+  "model": "claude-haiku-5-5",
+  "tiers": "easy,medium,hard",
+  "arms": "stated,done",
+  "thinking": "off,on",
+  "pairs": 1,
+  "sessions": 7,
+  "capacity": 4,
+  "beta": 1.0,
+  "team_rule": "flat",
+  "team_rate": 0.75,
+  "workers": 12,
+  "seed": 0,
+  "calib": 0,
+  "max_cost": 4.0,
+  "summarize": "",
+  "prompts": "",
+  "out": "results/lc_pilot3_check2/lc_pilot3_check2"
+ },
+ "T": 4,
+ "prompts": "queue_game_v3",
+ "prompts_sha256": "aa9e10091f71ba6711705305ab5b8d2c129003b54b2b17a8dc9e5578e08b1ad8",
+ "backend": "anthropic-api",
+ "python": "3.9.12",
+ "sandbox": "sandbox-exec",
+ "tickets": {
+  "easy": 34,
+  "medium": 54,
+  "hard": 37
+ }
+}

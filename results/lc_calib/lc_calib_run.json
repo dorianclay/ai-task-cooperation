@@ -1,0 +1,33 @@
+{
+ "run_id": "lc_calib-20261121T173739",
+ "date": "2026-11-21T17:37:39",
+ "git_commit": "08ddde43aa2d60a31f31d225a8e2c95f93ab1d68",
+ "git_dirty": true,
+ "args": {
+  "model": "claude-haiku-5-5",
+  "tiers": "easy,medium,hard",
+  "arms": "stated,done",
+  "thinking": "off,on",
+  "pairs": 2,
+  "sessions": 3,
+  "beta": 1.0,
+  "workers": 8,
+  "seed": 0,
+  "calib": 30,
+  "max_cost": 1.0,
+  "summarize": "",
+  "out": "results/lc_calib/lc_calib"
+ },
+ "T": 10,
+ "A": 4.0,
+ "prompts": "queue_game_v1",
+ "prompts_sha256": "12bf1711cd4472c699facc2a3fac52f18ad6576cf83aed51afdc73ca61e0852a",
+ "backend": "anthropic-api",
+ "python": "3.9.6",
+ "sandbox": "sandbox-exec",
+ "tickets": {
+  "easy": 17,
+  "medium": 26,
+  "hard": 20
+ }
+}

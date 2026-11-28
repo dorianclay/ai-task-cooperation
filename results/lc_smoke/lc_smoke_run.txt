@@ -1,0 +1,9 @@
+  4/4 pairs, $0.18, 277s
+
+tier    arm     think   sess  agents  team tickets  closed%  no ticket  payout $  belief
+hard    done    off        1       2          1.00      50%          0      9.66    0.00
+hard    done    on         1       2          0.00      85%          0      8.50    5.00
+hard    stated  off        1       2          0.00      60%          0      6.00    0.00
+hard    stated  on         1       2          4.50      85%          0     15.81    5.00
+team tickets = how many of 10 went to the team board (Stated: the split it asked for; Done: what it took).
+tokens in/out 2115769/198563, cost $0.18, 277s

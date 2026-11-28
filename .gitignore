@@ -221,3 +221,6 @@ __marimo__/
 
 # Project: keep the sample transcripts that sit next to each result table
 !results/**/*.log
+
+# LiveCodeBench data is large and downloaded separately (see README.md)
+data/livecodebench/

@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""Stated vs Done: two live agents, hidden choices. Design and prompts: NOTES.md, section 3.
+"""Stated vs Done: two live agents, hidden choices. Earlier design (pilots 1 and 2); the current
+experiment is queue_game.py. Design and prompts: NOTES.md, section 6.7.
 
 Both arms share one brief. Stated: the agent commits to a split of its turns in one reply,
 then is handed tickets in that split. Done: the agent works turn by turn; each turn it asks
