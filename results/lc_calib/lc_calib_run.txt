@@ -1,0 +1,9 @@
+
+tier    think     n  closed   rate  no submit  out tok/ticket
+easy    off      17      17   100%          0             370
+easy    on       17      17   100%          0             398
+medium  off      26      24    92%          0             842
+medium  on       26      21    81%          0            1566
+hard    off      20      12    60%          0            1226
+hard    on       20      17    85%          0            3935
+tokens in/out 333312/178882, cost $0.12, 268s

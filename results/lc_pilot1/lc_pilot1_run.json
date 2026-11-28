@@ -1,0 +1,33 @@
+{
+ "run_id": "lc_pilot1-20261123T154508",
+ "date": "2026-11-23T15:45:08",
+ "git_commit": "08ddde43aa2d60a31f31d225a8e2c95f93ab1d68",
+ "git_dirty": true,
+ "args": {
+  "model": "claude-haiku-5-5",
+  "tiers": "easy,medium,hard",
+  "arms": "stated,done",
+  "thinking": "off,on",
+  "pairs": 10,
+  "sessions": 1,
+  "beta": 1.0,
+  "workers": 12,
+  "seed": 0,
+  "calib": 0,
+  "max_cost": 5.0,
+  "summarize": "",
+  "out": "results/lc_pilot1/lc_pilot1"
+ },
+ "T": 10,
+ "A": 4.0,
+ "prompts": "queue_game_v1",
+ "prompts_sha256": "7fd06d84c9a63ceac3fb38c660bc905de96fc60361c9b5fc99a28b734e7fc1ee",
+ "backend": "anthropic-api",
+ "python": "3.9.12",
+ "sandbox": "sandbox-exec",
+ "tickets": {
+  "easy": 17,
+  "medium": 26,
+  "hard": 20
+ }
+}

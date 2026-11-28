@@ -1,0 +1,21 @@
+  5/24 pairs, $0.12, 62s
+  10/24 pairs, $0.21, 94s
+  15/24 pairs, $0.38, 172s
+  20/24 pairs, $0.51, 252s
+  24/24 pairs, $0.61, 485s
+
+tier    arm     think   sess  agents  team tickets  closed%  no ticket  payout $  belief
+easy    done    off        1       4          5.00     100%          0     13.95    0.00
+easy    done    on         1       4          0.00     100%          0     10.00    5.00
+easy    stated  off        1       4          3.75     100%          0     17.05    1.25
+easy    stated  on         1       4          3.75     100%          0     17.05    8.75
+medium  done    off        1       4          5.00      82%          0     12.25    0.00
+medium  done    on         1       4          0.00      92%          0      9.25    4.75
+medium  stated  off        1       4          3.75      85%          0     15.32    1.25
+medium  stated  on         1       4          5.00      98%          0     17.40    5.00
+hard    done    off        1       4          4.50      55%          0     11.05    0.00
+hard    done    on         1       4          0.00      82%          0      8.25    5.67
+hard    stated  off        1       4          3.75      58%          0     10.90    1.25
+hard    stated  on         1       4          5.00      85%          0     15.91    5.00
+team tickets = how many of 10 went to the team board (Stated: the split it asked for; Done: what it took).
+tokens in/out 8301841/627770, cost $0.61, 485s

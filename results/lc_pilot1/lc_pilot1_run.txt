@@ -1,0 +1,41 @@
+  5/120 pairs, $0.12, 55s
+  10/120 pairs, $0.26, 120s
+  15/120 pairs, $0.37, 167s
+  20/120 pairs, $0.50, 216s
+  25/120 pairs, $0.62, 265s
+  30/120 pairs, $0.76, 312s
+  35/120 pairs, $0.93, 374s
+  40/120 pairs, $1.05, 420s
+  45/120 pairs, $1.17, 462s
+  50/120 pairs, $1.35, 530s
+  55/120 pairs, $1.47, 572s
+  60/120 pairs, $1.60, 629s
+  65/120 pairs, $1.77, 692s
+  70/120 pairs, $1.85, 715s
+  75/120 pairs, $2.04, 796s
+  80/120 pairs, $2.12, 828s
+  85/120 pairs, $2.24, 878s
+  90/120 pairs, $2.38, 933s
+  95/120 pairs, $2.48, 966s
+  100/120 pairs, $2.63, 1030s
+  105/120 pairs, $2.77, 1084s
+  110/120 pairs, $2.88, 1121s
+  115/120 pairs, $3.03, 1202s
+  120/120 pairs, $3.19, 1414s
+
+tier    arm     think   sess  agents  team tickets  closed%  no ticket  payout $  belief
+easy    done    off        1      20          2.00     100%          0     12.32    1.00
+easy    done    on         1      20          0.70     100%          0     11.39    5.70
+easy    stated  off        1      16          4.88     100%          0     17.30    1.56
+easy    stated  on         1      20          4.35     100%          0     17.33    4.94
+medium  done    off        1      20          2.00      89%          0     11.21    0.00
+medium  done    on         1      20          0.00      94%          0      9.40    5.95
+medium  stated  off        1      18          3.56      83%          0     14.38    1.67
+medium  stated  on         1      20          4.45      96%          0     16.90    4.09
+hard    done    off        1      20          5.10      48%          1      8.77    0.00
+hard    done    on         1      20          1.35      88%          0     10.35    4.53
+hard    stated  off        1      18          4.94      58%          0     12.23    1.11
+hard    stated  on         1      20          4.05      85%          0     15.40    3.73
+team tickets = how many of 10 went to the team board (Stated: the split it asked for; Done: what it took).
+4 pair(s) dropped as incomplete: [('easy', 'stated', 'off', 2), ('easy', 'stated', 'off', 8), ('hard', 'stated', 'off', 3), ('medium', 'stated', 'off', 0)]
+tokens in/out 48656619/3275664, cost $3.19, 1414s
